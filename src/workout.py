@@ -1,6 +1,8 @@
+from dataclasses import dataclass
+
+@dataclass
 class Workout:
-    def __init__(self):
-        pass
+    exercises: list
 
 
 

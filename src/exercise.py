@@ -6,7 +6,7 @@ class Exercise:
     name: str
     description: str
     body_part: str
-    difficulty: str
+    level: str
     repetitions: int
     series: int
 
