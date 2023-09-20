@@ -1,5 +1,10 @@
+from src.exercise_repository import ExerciseRepository
+
+
 def test_1():
-    assert 1 == 1
+    repository = ExerciseRepository()
+    repository.load("json1.json")
+    assert repository.get_all() == 1
 
 
 def test_2():

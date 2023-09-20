@@ -1,4 +1,5 @@
-from exercise import Exercise
+from exercise_repository import ExerciseRepository
+from workout import Workout
 from user_requirements import UserRequirements
 
 
@@ -7,5 +8,5 @@ class WorkoutPlanner:
     def __init__(self):
         pass
 
-    def create_plan(self, user_req: UserRequirements, exercise: Exercise): #returns class Workout
+    def create_plan(self, user_req: UserRequirements, repository: ExerciseRepository) -> Workout:  # returns class Workout
         pass
