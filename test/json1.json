@@ -1,0 +1,12 @@
+{
+    "exercise": [
+      {
+        "name": "klik",
+        "description": "ruce u na úrovni ramenou, s nádechem dolů, s výdechem nahoru",
+        "body_part": ["paže","prsa"],
+        "level": "začátečník",
+        "repetitions": "10",
+        "series": "3"
+      }
+    ]
+}

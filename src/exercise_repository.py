@@ -1,9 +1,16 @@
 from exercise import Exercise
+import json
 
 
 class ExerciseRepository:
+    def __init__(self):
+        self.json_data = None
+
     def load(self, file_name):
-        pass
+        with open(file_name) as v:
+            self.json_data = json.load(v)
+            v.close()
+            return self.json_data
 
     def get_all(self) -> list[Exercise]:
         pass
