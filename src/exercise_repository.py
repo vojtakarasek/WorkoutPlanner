@@ -4,16 +4,24 @@ import json
 
 class ExerciseRepository:
     def __init__(self):
-        self.json_data = None
+        self.exercises = []
 
     def load(self, file_name):
-        with open(file_name) as v:
-            self.json_data = json.load(v)
-            v.close()
-            return self.json_data
+        self.exercises = []
+        with open(file_name, encoding='utf-8') as v:
+            json_data = json.load(v)
+            for exercise in json_data["exercise"]:
+                self.exercises.append(
+                    Exercise(exercise["name"],
+                             exercise["description"],
+                             exercise["body_part"],
+                             exercise["level"],
+                             int(exercise["repetitions"]),
+                             int(exercise["series"]))
+                )
 
     def get_all(self) -> list[Exercise]:
-        pass
+        return self.exercises
 
     def get_for_body_part(self, body_part) -> list[Exercise]:
         pass
