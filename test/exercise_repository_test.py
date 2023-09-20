@@ -3,7 +3,7 @@ from src.exercise_repository import ExerciseRepository
 
 def test_load():
     repository = ExerciseRepository()
-    repository.load("json1.json")
+    repository.load("test/json1.json")
     assert len(repository.get_all()) == 1
 
 
