@@ -9,3 +9,4 @@ class BodyPart(enum.StrEnum):
     shoulders = 'ramena'
     quads = 'stehna'
     calves = 'lýtka'
+

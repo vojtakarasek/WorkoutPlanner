@@ -12,3 +12,6 @@ class Exercise:
     repetitions: int
     series: int
 
+    def __eq__(self, other):
+        return self.name == other.name and self.description == other.description and self.body_part == other.body_part \
+            and self.level == other.level and self.repetitions == other.repetitions and self.series == other.series
