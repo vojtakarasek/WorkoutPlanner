@@ -23,5 +23,16 @@ class ExerciseRepository:
     def get_all(self) -> list[Exercise]:
         return self.exercises
 
-    def get_for_body_part(self, body_part) -> list[Exercise]:
-        pass
+    def get_for_body_part(self, body_part_given) -> list[Exercise]:
+        exercises_body_part = []
+        for exercise in self.exercises:
+            if len(body_part_given) == 1:
+                if body_part_given[0] in exercise.body_part:
+                    exercises_body_part.append(exercise)
+            else:
+                for i in body_part_given:
+                    if i in exercise.body_part:
+                        exercises_body_part.append(exercise)
+                        break
+
+        return exercises_body_part

@@ -23,6 +23,7 @@ def array_equals(a, b) -> bool:
             return False
     return True
 
+
 def test_get_all():
     repository = ExerciseRepository()
     repository.load("json1.json")
@@ -35,5 +36,22 @@ def test_get_all():
 def test_get_for_body_part():
     repository = ExerciseRepository()
     repository.load("json1.json")
-    assert len(repository.get_for_body_part(BodyPart('paže'))) == 1
+    assert len(repository.get_for_body_part([BodyPart.arms])) == 1
 
+
+def test_get_for_body_part2():
+    repository = ExerciseRepository()
+    repository.load("json1.json")
+    assert len(repository.get_for_body_part([BodyPart.arms, BodyPart.chest])) == 1
+
+
+def test_get_for_body_part3():
+    repository = ExerciseRepository()
+    repository.load("json2.json")
+    assert len(repository.get_for_body_part([BodyPart.arms, BodyPart.chest])) == 1
+
+
+def test_get_for_body_part4():
+    repository = ExerciseRepository()
+    repository.load("json2.json")
+    assert len(repository.get_for_body_part([BodyPart.arms, BodyPart.quads])) == 2
