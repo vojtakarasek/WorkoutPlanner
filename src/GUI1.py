@@ -16,8 +16,29 @@ class GUI:
         self.screen_height = self.master.winfo_screenheight()
         self.screen_width = self.master.winfo_screenwidth()
 
+        container = tk.Frame(self)
+        container.pack(side='top', fill='both', expand=True)
+        container.grid_rowconfigure(0, weight=1)
+        container.grid_columnconfigure(0, weight=1)
 
-class Frame1:
+        self.frames = {}
+        for F in (Frame1, Frame2):
+            page_name = F.__name__
+            frame = F(parent=container, controller=self)
+            self.frames[page_name] = frame
+
+            frame.grid(row=0, column=0, sticky='nsew')
+
+        self.show_frame('Frame1')
+
+        def show_frame(self, page_name):
+            shown_frame = self.frames[page_name]
+            shown_frame.tkraise()
+
+
+
+
+class Frame1():
     def __init__(self, master, screen_width, screen_height):
         self.master = master
         self.frm1 = ttk.Frame(self.master, padding=10)
@@ -47,9 +68,18 @@ class Frame1:
         bp_combobox['values'] = values
         bp_combobox['state'] = 'readonly'
 
+        # Button adding comboboxes
+        self.adding_button = ttk.Button(self.frm1, text="Přidat více částí těla", command=self.generate_combobox)
+        self.adding_button.grid(column=1, row=8)
+
+        # Button switching to another frame
+        self.switch_frame_button = ttk.Button(self.frm1, text='Použít')
+
         # initializing second and third bodypart combobox
         self.bp_combobox_2 = None
+        self.selected_bp_2 = tkinter.StringVar()
         self.bp_combobox_3 = None
+        self.selected_bp_3 = tkinter.StringVar()
 
         self.frm1.place(x=0, y=0)
         self.frm1.bind("<Configure>", self.place_frame_center)
@@ -66,8 +96,26 @@ class Frame1:
     def generate_combobox(self):
         if self.i == 0:
             self.i += 1
-            ttk.Label(self.frm1, text='+', command=self.generate_combobox(), padding=5).grid(column=1, row=6)
-            self.bp_combobox_2 = ttk.Combobox(self.frm1, te)
+            ttk.Label(self.frm1, text='+', padding=5).grid(column=1, row=4)
+
+            self.bp_combobox_2 = ttk.Combobox(self.frm1, textvariable=self.selected_bp_2)
+            self.bp_combobox_2.grid(column=1, row=5)
+            self.bp_combobox_2['values'] = values
+            self.bp_combobox_2['state'] = 'readonly'
+        elif self.i == 1:
+            self.i += 1
+
+            ttk.Label(self.frm1, text='+', padding=5).grid(column=1, row=6)
+
+            self.bp_combobox_3 = ttk.Combobox(self.frm1, textvariable=self.selected_bp_3)
+            self.bp_combobox_3.grid(column=1, row=7)
+            self.bp_combobox_3['values'] = values
+            self.bp_combobox_3['state'] = 'readonly'
+            self.adding_button.destroy()
+
+
+class Frame2:
+    pass
 
 
 def main():
