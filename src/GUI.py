@@ -5,6 +5,8 @@ from tkinter import ttk
 # lepe umistit
 values = ['', 'břicho', 'záda', 'paže', 'prsa', 'ramena', 'stehna', 'lýtka']
 
+color = '#1D9A6C'
+
 
 class GUI(tk.Tk):
     def __init__(self, *args, **kwargs):
@@ -44,7 +46,6 @@ class GUI(tk.Tk):
 class Frame1(tk.Frame):
     def __init__(self, master, parent, controller):
         self.master = master
-        #self.frm1 = ttk.Frame(self.master, padding=10)
 
         tk.Frame.__init__(self, parent)
         self.controller = controller
@@ -58,7 +59,10 @@ class Frame1(tk.Frame):
         self.screen_width = self.master.winfo_screenwidth()
         self.screen_height = self.master.winfo_screenheight()
 
-        ttk.Label(self, text="Vyberte obtížnost").grid(column=1, row=0)
+        # background color
+        self.config(bg=color)
+
+        ttk.Label(self, background=color, text="Vyberte obtížnost").grid(column=1, row=0)
 
         # select level combobox
         selected_level = tk.StringVar()
@@ -67,7 +71,7 @@ class Frame1(tk.Frame):
         lvl_combobox['values'] = ('začátečník', 'středně pokročilý', 'pokročilý')
         lvl_combobox['state'] = 'readonly'
 
-        ttk.Label(self, text="Vyberte část těla, kterou chcete posilovat").grid(column=1, row=2)
+        ttk.Label(self, background=color, text="Vyberte část těla, kterou chcete posilovat").grid(column=1, row=2)
 
         # select body part combobox
         selected_bp_1 = tkinter.StringVar()
@@ -104,7 +108,7 @@ class Frame1(tk.Frame):
     def generate_combobox(self):
         if self.i == 0:
             self.i += 1
-            ttk.Label(self, text='+', padding=5).grid(column=1, row=4)
+            ttk.Label(self,background=color, text='+', padding=5).grid(column=1, row=4)
 
             self.bp_combobox_2 = ttk.Combobox(self, textvariable=self.selected_bp_2)
             self.bp_combobox_2.grid(column=1, row=5)
@@ -113,7 +117,7 @@ class Frame1(tk.Frame):
         elif self.i == 1:
             self.i += 1
 
-            ttk.Label(self, text='+', padding=5).grid(column=1, row=6)
+            ttk.Label(self, background=color, text='+', padding=5).grid(column=1, row=6)
 
             self.bp_combobox_3 = ttk.Combobox(self, textvariable=self.selected_bp_3)
             self.bp_combobox_3.grid(column=1, row=7)
@@ -129,7 +133,10 @@ class Frame2(tk.Frame):
         tk.Frame.__init__(self, parent)
         self.controller = controller
 
-        ttk.Label(self, text='Frame 2').grid(column=0, row=0)
+        self.config(bg='#722525')
+
+        switch_frame_back_button = ttk.Button(self, text='Zpatky', command=lambda: controller.show_frame('Frame1'))
+        switch_frame_back_button.grid(row=0, column=0)
 
 
 class Frame3(tk.Frame):
@@ -139,7 +146,7 @@ class Frame3(tk.Frame):
         tk.Frame.__init__(self, parent)
         self.controller = controller
 
-        ttk.Label(self, text='Frame3').grid(column=0, row=0)
+        self.config(bg=color)
 
 
 def main():
