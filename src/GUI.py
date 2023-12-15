@@ -6,7 +6,7 @@ from tkinter import ttk
 values = ['', 'břicho', 'záda', 'paže', 'prsa', 'ramena', 'stehna', 'lýtka']
 
 color = '#1D9A6C'
-
+selected_font = 'Helvetica'
 
 class GUI(tk.Tk):
     def __init__(self, *args, **kwargs):
@@ -62,7 +62,7 @@ class Frame1(tk.Frame):
         # background color
         self.config(bg=color)
 
-        ttk.Label(self, background=color, text="Vyberte obtížnost").grid(column=1, row=0)
+        ttk.Label(self, background=color, font=selected_font, text="Vyberte obtížnost").grid(column=1, row=0)
 
         # select level combobox
         selected_level = tk.StringVar()
@@ -71,11 +71,11 @@ class Frame1(tk.Frame):
         lvl_combobox['values'] = ('začátečník', 'středně pokročilý', 'pokročilý')
         lvl_combobox['state'] = 'readonly'
 
-        ttk.Label(self, background=color, text="Vyberte část těla, kterou chcete posilovat").grid(column=1, row=2)
+        ttk.Label(self, background=color, font=selected_font, text="Vyberte část těla, kterou chcete posilovat").grid(column=1, row=2)
 
         # select body part combobox
         selected_bp_1 = tkinter.StringVar()
-        bp_combobox = ttk.Combobox(self, textvariable=selected_bp_1)
+        bp_combobox = ttk.Combobox(self, textvariable=selected_bp_1,  style='Custom.TCombobox')
         bp_combobox.grid(column=1, row=3)
         bp_combobox['values'] = values
         bp_combobox['state'] = 'readonly'
@@ -96,6 +96,11 @@ class Frame1(tk.Frame):
         self.place(x=0, y=0)
         self.bind("<Configure>", self.place_frame_center)
 
+        # configure style
+        self.style = ttk.Style(self)
+        self.style.configure('TButton', font='Helvetica', background='grey')
+        self.style.configure('Custom.TCombobox', foreground='red', background='green', font='MS comic sans')
+
     def place_frame_center(self, event):
         frame_width = self.winfo_reqwidth()
         frame_height = self.winfo_reqheight()
@@ -108,7 +113,7 @@ class Frame1(tk.Frame):
     def generate_combobox(self):
         if self.i == 0:
             self.i += 1
-            ttk.Label(self,background=color, text='+', padding=5).grid(column=1, row=4)
+            ttk.Label(self, background=color, font=selected_font, text='+', padding=5).grid(column=1, row=4)
 
             self.bp_combobox_2 = ttk.Combobox(self, textvariable=self.selected_bp_2)
             self.bp_combobox_2.grid(column=1, row=5)
@@ -117,7 +122,7 @@ class Frame1(tk.Frame):
         elif self.i == 1:
             self.i += 1
 
-            ttk.Label(self, background=color, text='+', padding=5).grid(column=1, row=6)
+            ttk.Label(self, background=color, font=selected_font, text='+', padding=5).grid(column=1, row=6)
 
             self.bp_combobox_3 = ttk.Combobox(self, textvariable=self.selected_bp_3)
             self.bp_combobox_3.grid(column=1, row=7)
