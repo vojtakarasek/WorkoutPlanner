@@ -48,10 +48,10 @@ def test_get_for_body_part2():
 def test_get_for_body_part3():
     repository = ExerciseRepository()
     repository.load("json2.json")
-    assert len(repository.get_for_body_part([BodyPart.arms, BodyPart.chest])) == 1
+    assert len(repository.get_for_body_part([BodyPart('paže'), BodyPart.chest])) == 1
 
 
 def test_get_for_body_part4():
     repository = ExerciseRepository()
     repository.load("json2.json")
-    assert len(repository.get_for_body_part([BodyPart.arms, BodyPart.quads])) == 2
+    assert len(repository.get_for_body_part([BodyPart('paže'), BodyPart.quads])) == 2
