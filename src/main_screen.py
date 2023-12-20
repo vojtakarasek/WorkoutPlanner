@@ -1,8 +1,8 @@
 import tkinter as tk
 from tkinter import ttk
-from frame1 import selected_font
+from starting_screen import selected_font
 
-color = '#722525'
+color = '#DEEAFF'
 
 
 class Frame2(tk.Frame):

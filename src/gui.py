@@ -1,8 +1,8 @@
 import tkinter as tk
 from tkinter import ttk
-from frame1 import Frame1
-from frame2 import Frame2
-from frame3 import Frame3
+from starting_screen import Frame1
+from main_screen import Frame2
+from filler_screen import Frame3
 
 
 class GUI(tk.Tk):

@@ -3,7 +3,7 @@ from tkinter import ttk
 
 values = ['', 'břicho', 'záda', 'paže', 'prsa', 'ramena', 'stehna', 'lýtka']
 
-color = '#FD9A6C'
+color = '#A6A3E5'
 selected_font = 'Helvetica'
 
 
@@ -29,7 +29,7 @@ class Frame1(tk.Frame):
         ttk.Label(self, background=color, font=selected_font, text="Vyberte obtížnost").grid(column=1, row=0)
 
         # select level combobox
-        selected_level = tk.StringVar()
+        self.selected_level = tk.StringVar()
         lvl_combobox = ttk.Combobox(self, textvariable=selected_level, style='Custom.TCombobox')
         lvl_combobox.grid(column=1, row=1)
         lvl_combobox['values'] = ('začátečník', 'středně pokročilý', 'pokročilý')
@@ -38,7 +38,7 @@ class Frame1(tk.Frame):
         ttk.Label(self, background=color, font=selected_font, text="Vyberte část těla, kterou chcete posilovat").grid(column=1, row=2)
 
         # select body part combobox
-        selected_bp_1 = tk.StringVar()
+        self.selected_bp_1 = tk.StringVar()
         bp_combobox = ttk.Combobox(self, textvariable=selected_bp_1,  style='Custom.TCombobox')
         bp_combobox.grid(column=1, row=3)
         bp_combobox['values'] = values
@@ -92,3 +92,14 @@ class Frame1(tk.Frame):
             self.bp_combobox_3['values'] = values
             self.bp_combobox_3['state'] = 'readonly'
             self.adding_button.destroy()
+
+    def combobox_variables_bp(self):
+        selected_variable_1 = self.selected_bp_1.get()
+        selected_variable_2 = self.selected_bp_2.get()
+        selected_variable_3 = self.selected_bp_3.get()
+        selected_variables_bp = [selected_variable_1, selected_variable_2, selected_variable_3]
+        return selected_variables_bp
+
+    def combobox_variables_lvl(self):
+        selected_variables_lvl = self.selected_level.get()
+        return selected_variables_lvl

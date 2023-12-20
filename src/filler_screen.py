@@ -1,5 +1,5 @@
 import tkinter as tk
-from frame1 import color
+from starting_screen import color
 
 
 class Frame3(tk.Frame):
