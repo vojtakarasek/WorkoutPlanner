@@ -10,11 +10,11 @@ class ExerciseRepository:
         self.exercises = []
         with open(file_name, encoding='utf-8') as v:
             json_data = json.load(v)
-            for exercise in json_data["exercise"]:
+            for exercise in json_data["exercises"]:
                 self.exercises.append(
                     Exercise(exercise["name"],
                              exercise["description"],
-                             exercise["body_part"],
+                             exercise["body_parts"],
                              exercise["level"],
                              int(exercise["repetitions"]),
                              int(exercise["series"]))

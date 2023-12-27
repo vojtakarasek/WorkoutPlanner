@@ -1,9 +1,9 @@
 {
-    "exercise": [
+    "exercises": [
       {
         "name": "klik",
         "description": "ruce u na úrovni ramenou, s nádechem dolů, s výdechem nahoru",
-        "body_part": ["paže","prsa"],
+        "body_parts": ["paže","prsa"],
         "level": "začátečník",
         "repetitions": "10",
         "series": "3"
@@ -11,7 +11,7 @@
       {
         "name": "dřep",
         "description": "nohy na srovnane v siri s rameny, konrolovany pohyb az do chvile kdy bude zadek na uirvoni kolenou",
-        "body_part": ["stehna"],
+        "body_parts": ["stehna"],
         "level": "začátečník",
         "repetitions": "15",
         "series": "3"

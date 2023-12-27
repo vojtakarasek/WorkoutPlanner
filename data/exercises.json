@@ -1,0 +1,249 @@
+{
+  "exercises": [
+    {
+      "name": "klik",
+      "description": "ruce u na úrovni ramenou, s nádechem dolů, s výdechem nahoru",
+      "body_parts": ["arms", "chest"],
+      "level": "začátečník",
+      "repetitions": "10",
+      "series": "3"
+    },
+    {
+      "name": "dřepy",
+      "description": "stoupněte si rovně, spustte tělo dolů a zvedněte zpět",
+      "body_parts": ["quads", "calves"],
+      "level": "začátečník",
+      "repetitions": "12",
+      "series": "3"
+    },
+    {
+      "name": "plank",
+      "description": "držte tělo ve správné linii ve statické pozici",
+      "body_parts": ["abdominals", "back"],
+      "level": "začátečník",
+      "repetitions": "1",
+      "duration": "30s",
+      "series": "3"
+    },
+    {
+      "name": "mrtvý tah",
+      "description": "se spuštěným tělem, zvedněte zem a vraťte zpět",
+      "body_parts": ["back", "arms"],
+      "level": "pokročilý",
+      "repetitions": "8",
+      "series": "4"
+    },
+    {
+      "name": "výpady",
+      "description": "stojte v pozici, udělejte krok dopředu a zpět",
+      "body_parts": ["quads", "calves"],
+      "level": "pokročilý",
+      "repetitions": "10",
+      "series": "3"
+    },
+    {
+      "name": "stahování činky k bradě",
+      "description": "seděte, stahujte činku k bradě",
+      "body_parts": ["arms", "back"],
+      "level": "střední",
+      "repetitions": "12",
+      "series": "3"
+    },
+    {
+      "name": "sklony s jednoručkami",
+      "description": "se sklonem, zdvihněte jednoručky k trupu",
+      "body_parts": ["abdominals", "chest"],
+      "level": "střední",
+      "repetitions": "10",
+      "series": "3"
+    },
+    {
+      "name": "box skoky",
+      "description": "skočte na box a zpět na zem",
+      "body_parts": ["quads", "calves"],
+      "level": "střední",
+      "repetitions": "15",
+      "series": "3"
+    },
+    {
+      "name": "vzpěračský tah",
+      "description": "s činkou, zvedejte tělo nahoru",
+      "body_parts": ["back", "arms"],
+      "level": "začátečník",
+      "repetitions": "8",
+      "series": "4"
+    },
+    {
+      "name": "plank s rotací",
+      "description": "držte plank a rotujte tělo",
+      "body_parts": ["abdominals", "shoulders"],
+      "level": "začátečník",
+      "repetitions": "1",
+      "duration": "45s",
+      "series": "3"
+    },
+    {
+      "name": "bench press",
+      "description": "lehněte si na lavici, zvedejte činky nahoru",
+      "body_parts": ["chest", "arms"],
+      "level": "pokročilý",
+      "repetitions": "10",
+      "series": "4"
+    },
+    {
+      "name": "výskoky",
+      "description": "skákejte nahoru a dolů",
+      "body_parts": ["quads", "calves"],
+      "level": "pokročilý",
+      "repetitions": "12",
+      "series": "3"
+    },
+    {
+      "name": "veslování",
+      "description": "s jednoručkami, tělo se sklonem",
+      "body_parts": ["back", "arms"],
+      "level": "střední",
+      "repetitions": "10",
+      "series": "3"
+    },
+    {
+      "name": "plank s nohama na bosu",
+      "description": "držte plank s nohama na bosu",
+      "body_parts": ["abdominals", "back"],
+      "level": "střední",
+      "repetitions": "1",
+      "duration": "40s",
+      "series": "3"
+    },
+    {
+      "name": "dřepy s jednoručkami",
+      "description": "udělejte dřep s jednoručkami v rukou",
+      "body_parts": ["quads", "calves"],
+      "level": "střední",
+      "repetitions": "12",
+      "series": "3"
+    },
+    {
+      "name": "military press",
+      "description": "se stojící, zvedejte činky nad hlavu",
+      "body_parts": ["shoulders", "arms"],
+      "level": "začátečník",
+      "repetitions": "10",
+      "series": "3"
+    },
+    {
+      "name": "leg curl",
+      "description": "lehni si, zvedej nohy k hýždím",
+      "body_parts": ["quads", "calves"],
+      "level": "začátečník",
+      "repetitions": "12",
+      "series": "3"
+    },
+    {
+      "name": "pull-ups",
+      "description": "vis na hrazdě a zvedej tělo nahoru",
+      "body_parts": ["back", "arms"],
+      "level": "pokročilý",
+      "repetitions": "8",
+      "series": "4"
+    },
+    {
+      "name": "plank s výpadem",
+      "description": "držte plank a dělejte výpady",
+      "body_parts": ["abdominals", "quads"],
+      "level": "pokročilý",
+      "repetitions": "1",
+      "duration": "45s",
+      "series": "3"
+    },
+    {
+      "name": "leg press",
+      "description": "ve stoje, tlačte nohy od sebe na stroji",
+      "body_parts": ["quads", "calves"],
+      "level": "střední",
+      "repetitions": "12",
+      "series": "3"
+    },
+    {
+      "name": "tricep dips",
+      "description": "opřete se na podporu, svažte tělo dolů a zpět nahoru",
+      "body_parts": ["arms", "chest"],
+      "level": "střední",
+      "repetitions": "15",
+      "series": "3"
+    },
+    {
+      "name": "side plank",
+      "description": "držte tělo v boční poloze s oporou na jedné ruce",
+      "body_parts": ["abdominals", "back"],
+      "level": "začátečník",
+      "repetitions": "1",
+      "duration": "30s",
+      "series": "3"
+    },
+    {
+      "name": "lunges",
+      "description": "udělejte krok vpřed a skloňte se, pak se vraťte zpět",
+      "body_parts": ["quads", "calves"],
+      "level": "začátečník",
+      "repetitions": "10",
+      "series": "3"
+    },
+    {
+      "name": "bicep curls",
+      "description": "s jednoručkami, zvedejte jednoručky k ramenům",
+      "body_parts": ["arms", "shoulders"],
+      "level": "pokročilý",
+      "repetitions": "12",
+      "series": "4"
+    },
+    {
+      "name": "reverse crunches",
+      "description": "ležte na zádech, zvedejte nohy směrem k hrudi",
+      "body_parts": ["abdominals", "back"],
+      "level": "pokročilý",
+      "repetitions": "15",
+      "series": "3"
+    },
+    {
+      "name": "calf raises",
+      "description": "ve stoje, zvedejte paty co nejvýše",
+      "body_parts": ["calves"],
+      "level": "pokročilý",
+      "repetitions": "20",
+      "series": "3"
+    },
+    {
+      "name": "front raises",
+      "description": "s jednoručkami, zvedejte ruce před sebe",
+      "body_parts": ["shoulders", "arms"],
+      "level": "střední",
+      "repetitions": "12",
+      "series": "3"
+    },
+    {
+      "name": "deadlifts",
+      "description": "se spuštěným tělem, zvedejte činku ze země",
+      "body_parts": ["back", "legs"],
+      "level": "pokročilý",
+      "repetitions": "8",
+      "series": "4"
+    },
+    {
+      "name": "Russian twists",
+      "description": "sedněte si, nakloňte se zpět a otáčejte trupem",
+      "body_parts": ["abdominals", "obliques"],
+      "level": "střední",
+      "repetitions": "20",
+      "series": "3"
+    },
+    {
+      "name": "lat pulldowns",
+      "description": "s kladkou, tahání dolů na latissimus dorsi",
+      "body_parts": ["back", "arms"],
+      "level": "začátečník",
+      "repetitions": "10",
+      "series": "3"
+    }
+  ]
+}
