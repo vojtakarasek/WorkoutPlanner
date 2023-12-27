@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
+from user_requirements import UserRequirements
 
 values = ['', 'břicho', 'záda', 'paže', 'prsa', 'ramena', 'stehna', 'lýtka']
 
@@ -7,13 +8,13 @@ color = '#A6A3E5'
 selected_font = 'Helvetica'
 
 
-class Frame1(tk.Frame):
+class InputScreen(tk.Frame):
     def __init__(self, master, parent, controller):
         self.master = master
 
         tk.Frame.__init__(self, parent)
         self.controller = controller
-        switch_frame_button = ttk.Button(self, text='Použít', command=lambda: controller.show_frame('Frame2'))
+        switch_frame_button = ttk.Button(self, text='Naplánovat', command=self.on_planning_clicked)
         switch_frame_button.grid(column=1, row=9)
 
         # variable helping with combo boxes counting
@@ -30,16 +31,17 @@ class Frame1(tk.Frame):
 
         # select level combobox
         self.selected_level = tk.StringVar()
-        lvl_combobox = ttk.Combobox(self, textvariable=selected_level, style='Custom.TCombobox')
+        lvl_combobox = ttk.Combobox(self, textvariable=self.selected_level, style='Custom.TCombobox')
         lvl_combobox.grid(column=1, row=1)
         lvl_combobox['values'] = ('začátečník', 'středně pokročilý', 'pokročilý')
         lvl_combobox['state'] = 'readonly'
 
-        ttk.Label(self, background=color, font=selected_font, text="Vyberte část těla, kterou chcete posilovat").grid(column=1, row=2)
+        ttk.Label(self, background=color, font=selected_font, text="Vyberte část těla, kterou chcete posilovat").grid(
+            column=1, row=2)
 
         # select body part combobox
         self.selected_bp_1 = tk.StringVar()
-        bp_combobox = ttk.Combobox(self, textvariable=selected_bp_1,  style='Custom.TCombobox')
+        bp_combobox = ttk.Combobox(self, textvariable=self.selected_bp_1, style='Custom.TCombobox')
         bp_combobox.grid(column=1, row=3)
         bp_combobox['values'] = values
         bp_combobox['state'] = 'readonly'
@@ -63,6 +65,8 @@ class Frame1(tk.Frame):
         # configure style
         self.style = ttk.Style(self)
         self.style.configure('TButton', font='Helvetica', background=color)
+
+        self.user_requirements = UserRequirements(self)
 
     def place_frame_center(self, event):
         frame_width = self.winfo_reqwidth()
@@ -103,3 +107,7 @@ class Frame1(tk.Frame):
     def combobox_variables_lvl(self):
         selected_variables_lvl = self.selected_level.get()
         return selected_variables_lvl
+
+    def on_planning_clicked(self):
+        reqs = self.user_requirements.body_part_reqs()
+        self.controller.plan_and_show_workout(reqs)

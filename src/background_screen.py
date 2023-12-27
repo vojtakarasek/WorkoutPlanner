@@ -1,8 +1,8 @@
 import tkinter as tk
-from starting_screen import color
+from input_screen import color
 
 
-class Frame3(tk.Frame):
+class BackgroundScreen(tk.Frame):
     def __init__(self, master, parent, controller):
         self.master = master
 
