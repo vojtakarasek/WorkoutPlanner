@@ -26,13 +26,22 @@ class ExerciseRepository:
     def get_for_body_part(self, body_part_given) -> list[Exercise]:
         exercises_body_part = []
         for exercise in self.exercises:
-            if len(body_part_given) == 1:
-                if body_part_given[0] in exercise.body_part:
-                    exercises_body_part.append(exercise)
+            controller = 0
+            if len(exercises_body_part) == 8:
+                break
             else:
-                for i in body_part_given:
-                    if i in exercise.body_part:
+                if len(body_part_given) == 1:
+                    if body_part_given[0] in exercise.body_part:
                         exercises_body_part.append(exercise)
-                        break
+
+                else:
+                    for i in body_part_given:
+                        if controller == 0:
+                            if len(exercises_body_part) == 8:
+                                break
+                            else:
+                                if i in exercise.body_part:
+                                    exercises_body_part.append(exercise)
+                                    controller += 1
 
         return exercises_body_part
