@@ -15,7 +15,7 @@ class InputScreen(tk.Frame):
         tk.Frame.__init__(self, parent)
         self.controller = controller
         switch_frame_button = ttk.Button(self, text='Naplánovat', command=self.on_planning_clicked)
-        switch_frame_button.grid(column=1, row=9)
+        switch_frame_button.grid(column=1, row=9, sticky='nsew')
 
         # variable helping with combo boxes counting
         self.i = 0
@@ -31,8 +31,8 @@ class InputScreen(tk.Frame):
 
         # select level combobox
         self.selected_level = tk.StringVar()
-        lvl_combobox = ttk.Combobox(self, textvariable=self.selected_level, style='Custom.TCombobox')
-        lvl_combobox.grid(column=1, row=1)
+        lvl_combobox = ttk.Combobox(self, textvariable=self.selected_level)
+        lvl_combobox.grid(column=1, row=1, sticky='nsew')
         lvl_combobox['values'] = ('začátečník', 'středně pokročilý', 'pokročilý')
         lvl_combobox['state'] = 'readonly'
 
@@ -41,14 +41,14 @@ class InputScreen(tk.Frame):
 
         # select body part combobox
         self.selected_bp_1 = tk.StringVar()
-        bp_combobox = ttk.Combobox(self, textvariable=self.selected_bp_1, style='Custom.TCombobox')
-        bp_combobox.grid(column=1, row=3)
+        bp_combobox = ttk.Combobox(self, textvariable=self.selected_bp_1)
+        bp_combobox.grid(column=1, row=3, sticky='nsew')
         bp_combobox['values'] = values
         bp_combobox['state'] = 'readonly'
 
         # Button adding comboboxes
         self.adding_button = ttk.Button(self, text="Přidat více částí těla", command=self.generate_combobox)
-        self.adding_button.grid(column=1, row=8)
+        self.adding_button.grid(column=1, row=8, sticky='nsew')
 
         # Button switching to another frame
         # self.switch_frame_button = ttk.Button(self.frm1, text='Použít')
@@ -65,6 +65,7 @@ class InputScreen(tk.Frame):
         # configure style
         self.style = ttk.Style(self)
         self.style.configure('TButton', font='Helvetica', background=color)
+        self.style.configure('CustomTLabel', font=(selected_font, 30), background=color)
 
         self.user_requirements = UserRequirements(self)
 
@@ -83,7 +84,7 @@ class InputScreen(tk.Frame):
             ttk.Label(self, background=color, font=selected_font, text='+', padding=5).grid(column=1, row=4)
 
             self.bp_combobox_2 = ttk.Combobox(self, textvariable=self.selected_bp_2)
-            self.bp_combobox_2.grid(column=1, row=5)
+            self.bp_combobox_2.grid(column=1, row=5, sticky='nsew')
             self.bp_combobox_2['values'] = values
             self.bp_combobox_2['state'] = 'readonly'
         elif self.i == 1:
@@ -92,7 +93,7 @@ class InputScreen(tk.Frame):
             ttk.Label(self, background=color, font=selected_font, text='+', padding=5).grid(column=1, row=6)
 
             self.bp_combobox_3 = ttk.Combobox(self, textvariable=self.selected_bp_3)
-            self.bp_combobox_3.grid(column=1, row=7)
+            self.bp_combobox_3.grid(column=1, row=7, sticky='nsew')
             self.bp_combobox_3['values'] = values
             self.bp_combobox_3['state'] = 'readonly'
             self.adding_button.destroy()
