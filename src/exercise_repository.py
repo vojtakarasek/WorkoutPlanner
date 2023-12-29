@@ -16,7 +16,7 @@ class ExerciseRepository:
                              exercise["description"],
                              exercise["body_parts"],
                              exercise["level"],
-                             int(exercise["repetitions"]),
+                             exercise["repetitions"],
                              int(exercise["series"]))
                 )
 

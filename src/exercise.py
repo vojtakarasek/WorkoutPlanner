@@ -9,7 +9,7 @@ class Exercise:
     description: str
     body_part: BodyPart
     level: Level
-    repetitions: int
+    repetitions: str
     series: int
 
     def __eq__(self, other):
