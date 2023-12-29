@@ -5,6 +5,7 @@ from src.workout_planner import WorkoutPlanner
 from input_screen import InputScreen
 from workout_screen import WorkoutScreen
 from background_screen import BackgroundScreen
+from pop_up_screen import PopUpScreen
 
 
 class GUI(tk.Tk):
@@ -26,7 +27,7 @@ class GUI(tk.Tk):
         # window.overrideredirect(1)
 
         self.frames = {}
-        for F in (InputScreen, WorkoutScreen, BackgroundScreen):
+        for F in (InputScreen, WorkoutScreen, BackgroundScreen, PopUpScreen):
             page_name = F.__name__
             frame = F(master=self, parent=container, controller=self)
             self.frames[page_name] = frame
@@ -49,5 +50,11 @@ class GUI(tk.Tk):
         # zavola planner
         workout = self.planner.create_plan(requirements)
         # Frame2 preda vysledek z planneru
-        self.frames['WorkoutScreen'].set_workout(workout)
+        workout_screen = self.frames['WorkoutScreen']
+        workout_screen.set_workout(workout)
         self.show_frame('WorkoutScreen')
+
+    def show_pop_up(self, exercise):
+        pop_up = self.frames['PopUpScreen']
+        pop_up.set_exercise(exercise)
+        self.show_frame('PopUpScreen')
