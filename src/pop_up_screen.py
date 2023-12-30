@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
+from tkVideoPlayer import TkinterVideo
 
 
 class PopUpScreen(tk.Frame):
@@ -27,6 +28,13 @@ class PopUpScreen(tk.Frame):
         self.style = ttk.Style()
         self.style.configure('Custom1.TLabel', font=('Helvetica', 40),foreground='white', background='black')
 
+        videoplayer = TkinterVideo(master=self, scaled=True)
+        videoplayer.load("../data/25.mp4")
+        videoplayer.set_size(size=(1600, 900), keep_aspect=False)
+        videoplayer.grid(row=0, column=0, sticky='nsew')
+
+        videoplayer.play()
+
     def place_frame_center(self, event):
         frame_width = self.winfo_reqwidth()
         frame_height = self.winfo_reqheight()
@@ -40,7 +48,7 @@ class PopUpScreen(tk.Frame):
         self.exercise = exercise
         self.values = (exercise.name, exercise.description, exercise.body_part, exercise.level,exercise.series,
                        exercise.repetitions)
-        n = 0
+        n = 1
 
         for group in zip(self.group_list, self.values):
             label = ttk.Label(self, text=f'{group[0]} {group[1]}', style='Custom1.TLabel')
