@@ -14,6 +14,8 @@ class InputScreen(tk.Frame):
 
         tk.Frame.__init__(self, parent)
         self.controller = controller
+        self.pack()
+        self.pack_propagate(True)
         switch_frame_button = ttk.Button(self, text='Naplánovat', command=self.on_planning_clicked)
         switch_frame_button.grid(column=1, row=9, sticky='nsew')
 
