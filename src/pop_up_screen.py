@@ -10,12 +10,14 @@ class PopUpScreen(tk.Frame):
         self.master = master
         self.group_list = ('Název:','Popis:','Partie:','Obtížnost:','Počet sérii:','Počet opakování:')
         self.values = ()
+        self.videoplayer = None
 
         tk.Frame.__init__(self, parent)
         self.controller = controller
 
         exit_button = ttk.Button(self, text='Exit', command=self.exit_button)
-        exit_button.grid(row=0, column=1, sticky='n')
+        #exit_button.grid(row=0, column=1, sticky='n')
+        exit_button.pack(side='right')
         self.config(bg='black')
 
         # monitor size
@@ -28,12 +30,10 @@ class PopUpScreen(tk.Frame):
         self.style = ttk.Style()
         self.style.configure('Custom1.TLabel', font=('Helvetica', 40),foreground='white', background='black')
 
-        videoplayer = TkinterVideo(master=self, scaled=True)
-        videoplayer.load("../data/25.mp4")
-        videoplayer.set_size(size=(1600, 900), keep_aspect=False)
-        videoplayer.grid(row=0, column=0, sticky='nsew')
-
-        videoplayer.play()
+        self.video_frame = tk.Frame(self, bg='green')
+        self.video_frame.config(width=1000, height=500)
+        self.video_frame.pack(side='top', expand=True)
+        self.video_frame.pack_propagate(False)
 
     def place_frame_center(self, event):
         frame_width = self.winfo_reqwidth()
@@ -46,19 +46,26 @@ class PopUpScreen(tk.Frame):
 
     def set_exercise(self, exercise):
         self.exercise = exercise
-        self.values = (exercise.name, exercise.description, exercise.body_part, exercise.level,exercise.series,
+        self.values = (exercise.name, exercise.description, exercise.body_part, exercise.level, exercise.series,
                        exercise.repetitions)
         n = 1
 
+        self.videoplayer = TkinterVideo(master=self.video_frame, scaled=True)
+        self.videoplayer.load(exercise.video)
+        self.videoplayer.pack(expand=True, fill='both')
+        self.videoplayer.play()
+
         for group in zip(self.group_list, self.values):
             label = ttk.Label(self, text=f'{group[0]} {group[1]}', style='Custom1.TLabel')
-            label.grid(row=n, column=0, sticky='w')
+            label.pack(side='top')
             self.drawn_labels.append(label)
             n += 1
 
     def exit_button(self):
         for label in self.drawn_labels:
             label.destroy()
+
+        self.videoplayer.destroy()
 
         self.controller.show_frame('WorkoutScreen')
 

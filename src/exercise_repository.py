@@ -17,7 +17,9 @@ class ExerciseRepository:
                              exercise["body_parts"],
                              exercise["level"],
                              exercise["repetitions"],
-                             int(exercise["series"]))
+                             int(exercise["series"]),
+                             exercise["video"]
+                             )
                 )
 
     def get_all(self) -> list[Exercise]:

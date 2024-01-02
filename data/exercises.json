@@ -6,7 +6,8 @@
       "body_parts": ["paže", "prsa"],
       "level": "začátečník",
       "repetitions": "10",
-      "series": "3"
+      "series": "3",
+      "video": "../data/25.mp4"
     },
     {
       "name": "dřepy",
@@ -14,16 +15,18 @@
       "body_parts": ["stehna"],
       "level": "začátečník",
       "repetitions": "12",
-      "series": "3"
+      "series": "3",
+      "video": "../data/25.mp4"
     },
     {
       "name": "plank",
       "description": "lehněte si na zem, opřete se o lokty a držte tělo rovně",
       "body_parts": ["břicho", "paže"],
       "level": "začátečník",
-      "repetitions": "1",
+      "repetitions": "60s",
       "duration": "60s",
-      "series": "3"
+      "series": "3",
+      "video": "../data/25.mp4"
     },
     {
       "name": "přítahy činky k bradě",
@@ -31,7 +34,8 @@
       "body_parts": ["paže", "prsa"],
       "level": "středně pokročilý",
       "repetitions": "10",
-      "series": "4"
+      "series": "4",
+      "video": "../data/25.mp4"
     },
     {
       "name": "veslování",
@@ -39,7 +43,8 @@
       "body_parts": ["záda"],
       "level": "středně pokročilý",
       "repetitions": "12",
-      "series": "4"
+      "series": "4",
+      "video": "../data/25.mp4"
     },
     {
       "name": "bicyklování",
@@ -47,7 +52,8 @@
       "body_parts": ["břicho"],
       "level": "středně pokročilý",
       "repetitions": "20",
-      "series": "3"
+      "series": "3",
+      "video": "../data/25.mp4"
     },
     {
       "name": "mrtvý tah",
@@ -55,7 +61,8 @@
       "body_parts": ["záda", "stehna"],
       "level": "pokročilý",
       "repetitions": "8",
-      "series": "4"
+      "series": "4",
+      "video": "../data/25.mp4"
     },
     {
       "name": "výpady",
@@ -63,7 +70,8 @@
       "body_parts": ["stehna"],
       "level": "pokročilý",
       "repetitions": "10",
-      "series": "4"
+      "series": "4",
+      "video": "../data/25.mp4"
     },
     {
       "name": "kliky na jedné ruce",
@@ -71,7 +79,8 @@
       "body_parts": ["paže", "prsa"],
       "level": "pokročilý",
       "repetitions": "8",
-      "series": "3"
+      "series": "3",
+      "video": "../data/25.mp4"
     },
     {
       "name": "plank s rotací",
@@ -79,7 +88,8 @@
       "body_parts": ["břicho", "paže"],
       "level": "pokročilý",
       "repetitions": "12",
-      "series": "3"
+      "series": "3",
+      "video": "../data/25.mp4"
     },
     {
       "name": "kliky na míči",
@@ -87,7 +97,8 @@
       "body_parts": ["paže", "prsa"],
       "level": "středně pokročilý",
       "repetitions": "10",
-      "series": "3"
+      "series": "3",
+      "video": "../data/25.mp4"
     },
     {
       "name": "dřepy s výskokem",
@@ -95,7 +106,8 @@
       "body_parts": ["stehna"],
       "level": "středně pokročilý",
       "repetitions": "15",
-      "series": "3"
+      "series": "3",
+      "video": "../data/25.mp4"
     },
     {
       "name": "fitball twist",
@@ -103,7 +115,8 @@
       "body_parts": ["břicho"],
       "level": "středně pokročilý",
       "repetitions": "20",
-      "series": "3"
+      "series": "3",
+      "video": "../data/25.mp4"
     },
     {
       "name": "předkopávání",
@@ -111,16 +124,18 @@
       "body_parts": ["stehna"],
       "level": "začátečník",
       "repetitions": "15",
-      "series": "3"
+      "series": "3",
+      "video": "../data/25.mp4"
     },
     {
       "name": "plank s nohama na fitballu",
       "description": "z planku položte nohy na fitball a držte tělo rovně",
       "body_parts": ["břicho", "paže"],
       "level": "středně pokročilý",
-      "repetitions": "1",
+      "repetitions": "45s",
       "duration": "45s",
-      "series": "3"
+      "series": "3",
+      "video": "../data/25.mp4"
     },
     {
       "name": "předklony",
@@ -128,7 +143,8 @@
       "body_parts": ["stehna"],
       "level": "začátečník",
       "repetitions": "12",
-      "series": "3"
+      "series": "3",
+      "video": "../data/25.mp4"
     },
     {
       "name": "dřepy s jednou nohou vzadu",
@@ -136,7 +152,8 @@
       "body_parts": ["stehna"],
       "level": "středně pokročilý",
       "repetitions": "10",
-      "series": "4"
+      "series": "4",
+      "video": "../data/25.mp4"
     },
     {
       "name": "bench press",
@@ -144,7 +161,8 @@
       "body_parts": ["prsa", "paže"],
       "level": "pokročilý",
       "repetitions": "8",
-      "series": "4"
+      "series": "4",
+      "video": "../data/25.mp4"
     },
     {
       "name": "vzpírání",
@@ -152,7 +170,8 @@
       "body_parts": ["záda"],
       "level": "pokročilý",
       "repetitions": "10",
-      "series": "4"
+      "series": "4",
+      "video": "../data/25.mp4"
     },
     {
       "name": "fitball rollout",
@@ -160,7 +179,8 @@
       "body_parts": ["břicho"],
       "level": "středně pokročilý",
       "repetitions": "12",
-      "series": "3"
+      "series": "3",
+      "video": "../data/25.mp4"
     },
     {
       "name": "kliky na hrazdě",
@@ -168,7 +188,8 @@
       "body_parts": ["paže", "prsa"],
       "level": "pokročilý",
       "repetitions": "8",
-      "series": "3"
+      "series": "3",
+      "video": "../data/25.mp4"
     },
     {
       "name": "přítahy k hrudi",
@@ -176,7 +197,8 @@
       "body_parts": ["záda"],
       "level": "středně pokročilý",
       "repetitions": "10",
-      "series": "3"
+      "series": "3",
+      "video": "../data/25.mp4"
     },
     {
       "name": "dřepy s výskokem a skokany",
@@ -184,7 +206,8 @@
       "body_parts": ["stehna"],
       "level": "pokročilý",
       "repetitions": "15",
-      "series": "4"
+      "series": "4",
+      "video": "../data/25.mp4"
     },
     {
       "name": "fitball hyperextenze",
@@ -192,7 +215,8 @@
       "body_parts": ["záda"],
       "level": "středně pokročilý",
       "repetitions": "12",
-      "series": "3"
+      "series": "3",
+      "video": "../data/25.mp4"
     },
     {
       "name": "russian twist",
@@ -200,7 +224,8 @@
       "body_parts": ["břicho"],
       "level": "středně pokročilý",
       "repetitions": "20",
-      "series": "3"
+      "series": "3",
+      "video": "../data/25.mp4"
     },
     {
       "name": "předklony s jednou nohou na lavici",
@@ -208,7 +233,8 @@
       "body_parts": ["stehna"],
       "level": "středně pokročilý",
       "repetitions": "12",
-      "series": "3"
+      "series": "3",
+      "video": "../data/25.mp4"
     },
     {
       "name": "bench press na skloněné lavici",
@@ -216,7 +242,8 @@
       "body_parts": ["prsa", "paže"],
       "level": "pokročilý",
       "repetitions": "8",
-      "series": "4"
+      "series": "4",
+      "video": "../data/25.mp4"
     },
     {
       "name": "veslování s jednou rukou",
@@ -224,7 +251,8 @@
       "body_parts": ["záda"],
       "level": "pokročilý",
       "repetitions": "10",
-      "series": "4"
+      "series": "4",
+      "video": "../data/25.mp4"
     },
     {
       "name": "plank s otočeným bokem",
@@ -232,7 +260,8 @@
       "body_parts": ["břicho", "paže"],
       "level": "pokročilý",
       "repetitions": "12",
-      "series": "3"
+      "series": "3",
+      "video": "../data/25.mp4"
     },
         {
       "name": "stání na špičkách",
@@ -240,7 +269,8 @@
       "body_parts": ["lýtka"],
       "level": "začátečník",
       "repetitions": "15",
-      "series": "3"
+      "series": "3",
+      "video": "../data/25.mp4"
     },
     {
       "name": "sedící válení nohou",
@@ -248,7 +278,8 @@
       "body_parts": ["lýtka"],
       "level": "začátečník",
       "repetitions": "12",
-      "series": "3"
+      "series": "3",
+      "video": "../data/25.mp4"
     },
     {
       "name": "skákání po špičkách",
@@ -256,7 +287,8 @@
       "body_parts": ["lýtka"],
       "level": "středně pokročilý",
       "repetitions": "20",
-      "series": "4"
+      "series": "4",
+      "video": "../data/25.mp4"
     },
     {
       "name": "jednonožní výpony",
@@ -264,7 +296,8 @@
       "body_parts": ["lýtka"],
       "level": "středně pokročilý",
       "repetitions": "12",
-      "series": "4"
+      "series": "4",
+      "video": "../data/25.mp4"
     },
     {
       "name": "kalhoty na lýtkách",
@@ -272,7 +305,8 @@
       "body_parts": ["lýtka"],
       "level": "středně pokročilý",
       "repetitions": "15",
-      "series": "3"
+      "series": "3",
+      "video": "../data/25.mp4"
     },
     {
       "name": "střídavé skákání po jedné noze",
@@ -280,7 +314,8 @@
       "body_parts": ["lýtka"],
       "level": "pokročilý",
       "repetitions": "15",
-      "series": "4"
+      "series": "4",
+      "video": "../data/25.mp4"
     },
     {
       "name": "skákání přes švihadlo",
@@ -288,7 +323,8 @@
       "body_parts": ["lýtka"],
       "level": "pokročilý",
       "repetitions": "30",
-      "series": "3"
+      "series": "3",
+      "video": "../data/25.mp4"
     },
     {
       "name": "výpony na špičky s váhou",
@@ -296,7 +332,8 @@
       "body_parts": ["lýtka"],
       "level": "pokročilý",
       "repetitions": "12",
-      "series": "3"
+      "series": "3",
+      "video": "../data/25.mp4"
     },
         {
       "name": "military press",
@@ -304,7 +341,8 @@
       "body_parts": ["ramena"],
       "level": "středně pokročilý",
       "repetitions": "10",
-      "series": "4"
+      "series": "4",
+      "video": "../data/25.mp4"
     },
     {
       "name": "vedrované rameno",
@@ -312,7 +350,8 @@
       "body_parts": ["ramena"],
       "level": "středně pokročilý",
       "repetitions": "12",
-      "series": "3"
+      "series": "3",
+      "video": "../data/25.mp4"
     },
     {
       "name": "přední zdvihy s činkami",
@@ -320,7 +359,8 @@
       "body_parts": ["ramena"],
       "level": "začátečník",
       "repetitions": "15",
-      "series": "3"
+      "series": "3",
+      "video": "../data/25.mp4"
     },
     {
       "name": "rotace ramen s gumou",
@@ -328,7 +368,8 @@
       "body_parts": ["ramena"],
       "level": "středně pokročilý",
       "repetitions": "12",
-      "series": "3"
+      "series": "3",
+      "video": "../data/25.mp4"
     },
     {
       "name": "arnoldovy tlaky",
@@ -336,7 +377,8 @@
       "body_parts": ["ramena"],
       "level": "pokročilý",
       "repetitions": "10",
-      "series": "4"
+      "series": "4",
+      "video": "../data/25.mp4"
     },
     {
       "name": "posilování lopatek",
@@ -344,7 +386,8 @@
       "body_parts": ["ramena", "záda"],
       "level": "středně pokročilý",
       "repetitions": "12",
-      "series": "3"
+      "series": "3",
+      "video": "../data/25.mp4"
     },
     {
       "name": "plank s tahem činky k rameni",
@@ -352,7 +395,8 @@
       "body_parts": ["ramena"],
       "level": "pokročilý",
       "repetitions": "10",
-      "series": "4"
+      "series": "4",
+      "video": "../data/25.mp4"
     },
     {
       "name": "vzpřimování paží s činkou",
@@ -360,7 +404,8 @@
       "body_parts": ["ramena"],
       "level": "začátečník",
       "repetitions": "12",
-      "series": "3"
+      "series": "3",
+      "video": "../data/25.mp4"
     },
     {
       "name": "dřepy s táhlem k hrudi",
@@ -368,7 +413,17 @@
       "body_parts": ["záda"],
       "level": "středně pokročilý",
       "repetitions": "10",
-      "series": "4"
+      "series": "4",
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "flyes na stroji",
+      "description": "na stroji pro flyes, sedněte si a tlačte ruce vpřed, pak zpět",
+      "body_parts": ["prsa"],
+      "level": "středně pokročilý",
+      "repetitions": "10",
+      "series": "4",
+      "video": "../data/25.mp4"
     }
   ]
 }

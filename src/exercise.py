@@ -11,6 +11,7 @@ class Exercise:
     level: Level
     repetitions: str
     series: int
+    video: str
 
     def __eq__(self, other):
         return self.name == other.name and self.description == other.description and self.body_part == other.body_part \
