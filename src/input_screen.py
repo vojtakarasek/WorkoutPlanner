@@ -112,5 +112,6 @@ class InputScreen(tk.Frame):
         return selected_variables_lvl
 
     def on_planning_clicked(self):
-        reqs = self.user_requirements.body_part_reqs()
-        self.controller.plan_and_show_workout(reqs)
+        bp_reqs = self.user_requirements.body_part_reqs()
+        lvl_reqs = self.user_requirements.level_reqs()
+        self.controller.plan_and_show_workout(bp_reqs, lvl_reqs)

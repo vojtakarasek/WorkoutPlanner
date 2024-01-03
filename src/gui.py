@@ -46,9 +46,9 @@ class GUI(tk.Tk):
         shown_frame = self.frames[page_name]
         shown_frame.tkraise()
 
-    def plan_and_show_workout(self, requirements: UserRequirements):
+    def plan_and_show_workout(self, body_part_requirements: UserRequirements, level_requirements: UserRequirements):
         # zavola planner
-        workout = self.planner.create_plan(requirements)
+        workout = self.planner.create_plan(body_part_requirements, level_requirements)
         # Frame2 preda vysledek z planneru
         workout_screen = self.frames['WorkoutScreen']
         workout_screen.set_workout(workout)
