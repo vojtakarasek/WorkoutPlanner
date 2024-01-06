@@ -54,6 +54,8 @@ class PopUpScreen(tk.Frame):
         self.videoplayer.load(exercise.video)
         self.videoplayer.pack(expand=True, fill='both')
         self.videoplayer.play()
+        self.videoplayer.bind("<<Ended>>", self.video_restart)
+        #self.videoplayer.after(5000, self.video_restart(exercise.video))
 
         for group in zip(self.group_list, self.values):
             label = ttk.Label(self, text=f'{group[0]} {group[1]}', style='Custom1.TLabel')
@@ -68,6 +70,11 @@ class PopUpScreen(tk.Frame):
         self.videoplayer.destroy()
 
         self.controller.show_frame('WorkoutScreen')
+
+    def video_restart(self, event):
+        self.videoplayer.pause()
+        self.videoplayer.seek(0)
+        self.videoplayer.play()
 
 
 
