@@ -34,9 +34,6 @@ class ExerciseRepository:
         exercises_body_part = []
         for exercise in self.exercises:
             controller = 0
-            #if len(self.exercises_body_part) == 8:
-                #break
-            #else:
             if len(body_part_given) == 1:
                 if body_part_given[0] in exercise.body_part:
                     exercises_body_part.append(exercise)
@@ -44,12 +41,9 @@ class ExerciseRepository:
             else:
                 for i in body_part_given:
                     if controller == 0:
-                            #if len(self.exercises_body_part) == 8:
-                                #break
-                            #else:
-                            if i in exercise.body_part:
-                                exercises_body_part.append(exercise)
-                                controller += 1
+                        if i in exercise.body_part:
+                            exercises_body_part.append(exercise)
+                            controller += 1
 
         return exercises_body_part
 

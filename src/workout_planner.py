@@ -35,11 +35,12 @@ class WorkoutPlanner:
         for _ in range(count):
             random_int = random.randint(0, len(exercises_body_part) - 1)
             exercises_level.append(exercises_body_part[random_int])
-            exercises_body_part.remove(exercises_body_part[random_int])
+            exercises_body_part.pop(random_int)
         return exercises_level
 
     @staticmethod
     def remove_random(exercises_level, count):
         for _ in range(count):
-            random_int = random.randint(0, len(exercises_level))
-            exercises_level.remove(exercises_level[random_int])
+            random_int = random.randint(0, len(exercises_level) - 1)
+            exercises_level.pop(random_int)
+        return exercises_level

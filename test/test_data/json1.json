@@ -6,7 +6,8 @@
         "body_parts": ["paže","prsa"],
         "level": "začátečník",
         "repetitions": "10",
-        "series": "3"
+        "series": "3",
+        "video": "../data/25.mp4"
       }
     ]
 }
