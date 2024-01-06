@@ -1,6 +1,9 @@
 import tkinter as tk
 from tkinter import ttk
+
+from src.level_enum import Level
 from user_requirements import UserRequirements
+from body_part_enum import BodyPart
 
 values = ['', 'břicho', 'záda', 'paže', 'prsa', 'ramena', 'stehna', 'lýtka']
 
@@ -69,8 +72,6 @@ class InputScreen(tk.Frame):
         self.style.configure('TButton', font='Helvetica', background=color)
         self.style.configure('CustomTLabel', font=(selected_font, 30), background=color)
 
-        self.user_requirements = UserRequirements(self)
-
     def place_frame_center(self, event):
         frame_width = self.winfo_reqwidth()
         frame_height = self.winfo_reqheight()
@@ -111,7 +112,26 @@ class InputScreen(tk.Frame):
         selected_variables_lvl = self.selected_level.get()
         return selected_variables_lvl
 
+    def body_part_reqs(self) -> list[BodyPart]:
+        body_parts = []
+        selected_bp = self.combobox_variables_bp()
+        for i in selected_bp:
+            if len(i) == 0:
+                pass
+            else:
+                body_parts.append(BodyPart(i))
+
+        return body_parts
+
+    def level_reqs(self):
+        selected_lvl = self.combobox_variables_lvl()
+        level = Level(selected_lvl)
+
+        return level
+
+    def create_reqs(self):
+        user_reqs = UserRequirements(self.body_part_reqs(), self.level_reqs())
+        return user_reqs
+
     def on_planning_clicked(self):
-        bp_reqs = self.user_requirements.body_part_reqs()
-        lvl_reqs = self.user_requirements.level_reqs()
-        self.controller.plan_and_show_workout(bp_reqs, lvl_reqs)
+        self.controller.plan_and_show_workout(self.create_reqs())

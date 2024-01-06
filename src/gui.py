@@ -12,6 +12,8 @@ class GUI(tk.Tk):
     def __init__(self, *args, **kwargs):
         tk.Tk.__init__(self, *args, **kwargs)
 
+        self.exercises_count = 8
+
         window = self
         container = tk.Frame(self)
         container.pack(side='top', fill='both', expand=True)
@@ -22,9 +24,6 @@ class GUI(tk.Tk):
         screen_width = self.winfo_screenwidth()
         screen_height = self.winfo_screenheight()
         window.geometry(f'{screen_width}x{screen_height}')
-
-        # drasticky reseni
-        # window.overrideredirect(1)
 
         self.frames = {}
         for F in (InputScreen, WorkoutScreen, BackgroundScreen, PopUpScreen):
@@ -46,9 +45,9 @@ class GUI(tk.Tk):
         shown_frame = self.frames[page_name]
         shown_frame.tkraise()
 
-    def plan_and_show_workout(self, body_part_requirements: UserRequirements, level_requirements: UserRequirements):
+    def plan_and_show_workout(self, user_req: UserRequirements):
         # zavola planner
-        workout = self.planner.create_plan(body_part_requirements, level_requirements)
+        workout = self.planner.create_plan(user_req, self.exercises_count)
         # Frame2 preda vysledek z planneru
         workout_screen = self.frames['WorkoutScreen']
         workout_screen.set_workout(workout)
