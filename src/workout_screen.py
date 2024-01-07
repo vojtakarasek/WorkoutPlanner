@@ -14,13 +14,15 @@ class WorkoutScreen(tk.Frame):
 
         self.color = '#DEEAFF'
         self.config(bg=self.color)
+        self.font = 60
 
         switch_frame_back_button = ttk.Button(self, text='Zpatky', command=lambda: controller.show_frame('InputScreen'), style='Custom.TButton')
-        switch_frame_back_button.pack(side="bottom", expand=True)
+        #switch_frame_back_button.pack(side="bottom")
+        switch_frame_back_button.place(x=0, y=0)
 
         self.style = ttk.Style(self)
         self.style.configure('Custom.TButton', font='Helvetica', background=self.color)
-        self.style.configure('TLabel', font=('Helvetica', 40, 'bold'), background=self.color, anchor="e")
+        self.style.configure('TLabel', font=('Helvetica', self.font, 'bold'), background=self.color)
 
         self.click_bindings = []
         self.enter_bindings = []
@@ -30,12 +32,20 @@ class WorkoutScreen(tk.Frame):
 
         self.is_drawn = False
 
-        self.Label = ttk.Label(self, text='CVIKY', style='Custom.TLabel')
-        self.Label.pack(side="top", expand=True)
+        self.exercises_frame = tk.Frame(self, bg=self.color)
+        self.exercises_frame.pack(side='left', expand=True)
+        self.repetitions_frame = tk.Frame(self, bg=self.color)
+        self.repetitions_frame.pack(side='right', expand=True)
+
+        self.Label_exercises = ttk.Label(self.exercises_frame, text='CVIKY', style='Custom.TLabel')
+        self.Label_exercises.pack(side="top", expand=True)
+
+        self.Label_repetitions = ttk.Label(self.repetitions_frame, text='OPAKOVÁNÍ', style='Custom.TLabel')
+        self.Label_repetitions.pack(side='top', expand=True)
 
     def set_workout(self, workout):
         self.workout = workout
-        self.style.configure('Custom.TLabel', font=('Helvetica', 40, 'bold'), background='red')
+        self.style.configure('Custom.TLabel', font=('Helvetica', self.font + 10, 'bold'), background=self.color)
 
         if self.is_drawn:
             for exercise, click_binding, enter_binding, leave_binding in zip(self.drawn_exercises, self.click_bindings,
@@ -56,61 +66,15 @@ class WorkoutScreen(tk.Frame):
             self.drawn_exercises = []
             self.drawn_repetitions = []
 
-        self.exercise_1 = ttk.Label(self, text=self.workout[0].name)
-        self.exercise_1.pack(side="top", expand=True)
-        self.exercise_1_reps = ttk.Label(self, text=f'{self.workout[0].series}x{self.workout[0].repetitions}')
-        self.exercise_1_reps.pack(side="top", expand=True)
-        self.drawn_exercises.append(self.exercise_1)
-        self.drawn_repetitions.append(self.exercise_1_reps)
+        # initializing labels
+        for i in range(8):
+            exercise = ttk.Label(self.exercises_frame, text=self.workout[i].name)
+            exercise.pack(side='top', expand=True, anchor='w')
+            self.drawn_exercises.append(exercise)
 
-        self.exercise_2 = ttk.Label(self, text=self.workout[1].name)
-        self.exercise_2.pack(side="top", expand=True)
-        self.exercise_2_reps = ttk.Label(self, text=f'{self.workout[1].series}x{self.workout[1].repetitions}')
-        self.exercise_2_reps.pack(side="top", expand=True)
-        self.drawn_exercises.append(self.exercise_2)
-        self.drawn_repetitions.append(self.exercise_2_reps)
-
-        self.exercise_3 = ttk.Label(self, text=self.workout[2].name, style='Custom.TLabel')
-        self.exercise_3.pack(side="top", expand=True)
-        self.exercise_3_reps = ttk.Label(self, text=f'{self.workout[2].series}x{self.workout[2].repetitions}')
-        self.exercise_3_reps.pack(side="top", expand=True)
-        self.drawn_exercises.append(self.exercise_3)
-        self.drawn_repetitions.append(self.exercise_3_reps)
-
-        self.exercise_4 = ttk.Label(self, text=self.workout[3].name)
-        self.exercise_4.pack(side="top", expand=True)
-        self.exercise_4_reps = ttk.Label(self, text=f'{self.workout[3].series}x{self.workout[3].repetitions}')
-        self.exercise_4_reps.pack(side="top", expand=True)
-        self.drawn_exercises.append(self.exercise_4)
-        self.drawn_repetitions.append(self.exercise_4_reps)
-
-        self.exercise_5 = ttk.Label(self, text=self.workout[4].name)
-        self.exercise_5.pack(side="top", expand=True)
-        self.exercise_5_reps = ttk.Label(self, text=f'{self.workout[5].series}x{self.workout[5].repetitions}')
-        self.exercise_5_reps.pack(side="top", expand=True)
-        self.drawn_exercises.append(self.exercise_5)
-        self.drawn_repetitions.append(self.exercise_5_reps)
-
-        self.exercise_6 = ttk.Label(self, text=self.workout[5].name)
-        self.exercise_6.pack(side="top", expand=True)
-        self.exercise_6_reps = ttk.Label(self, text=f'{self.workout[5].series}x{self.workout[5].repetitions}')
-        self.exercise_6_reps.pack(side="top", expand=True)
-        self.drawn_exercises.append(self.exercise_6)
-        self.drawn_repetitions.append(self.exercise_6_reps)
-
-        self.exercise_7 = ttk.Label(self, text=self.workout[6].name)
-        self.exercise_7.pack(side="top", expand=True)
-        self.exercise_7_reps = ttk.Label(self, text=f'{self.workout[6].series}x{self.workout[6].repetitions}')
-        self.exercise_7_reps.pack(side="top", expand=True)
-        self.drawn_exercises.append(self.exercise_7)
-        self.drawn_repetitions.append(self.exercise_7_reps)
-
-        self.exercise_8 = ttk.Label(self, text=self.workout[7].name)
-        self.exercise_8.pack(side="top", expand=True)
-        self.exercise_8_reps = ttk.Label(self, text=f'{self.workout[7].series}x{self.workout[7].repetitions}')
-        self.exercise_8_reps.pack(side="top", expand=True)
-        self.drawn_exercises.append(self.exercise_8)
-        self.drawn_repetitions.append(self.exercise_8_reps)
+            repetition = ttk.Label(self.repetitions_frame, text=f'{self.workout[i].series}x{self.workout[i].repetitions}')
+            repetition.pack(side='top', expand=True, anchor='center')
+            self.drawn_repetitions.append(repetition)
 
         for label, i in zip(self.drawn_exercises, range(8)):
             click_binding = label.bind("<Button-1>", lambda event, value=i: self.on_click(event, value))
@@ -123,10 +87,10 @@ class WorkoutScreen(tk.Frame):
         self.is_drawn = True
 
     def on_enter(self, event, value):
-        self.drawn_exercises[value].config(font=('Helvetica', 38, 'bold'), foreground='grey')
+        self.drawn_exercises[value].config(font=('Helvetica', self.font - 2, 'bold'), foreground='grey')
 
     def on_leave(self, event, value):
-        self.drawn_exercises[value].config(font=('Helvetica', 40, 'bold'), foreground='black')
+        self.drawn_exercises[value].config(font=('Helvetica', self.font, 'bold'), foreground='black')
 
     def on_click(self, event, value):
         self.controller.show_pop_up(self.workout[value])
