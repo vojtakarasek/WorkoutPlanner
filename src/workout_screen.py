@@ -87,10 +87,13 @@ class WorkoutScreen(tk.Frame):
         self.is_drawn = True
 
     def on_enter(self, event, value):
+        self.exercises_frame.pack_propagate(False)
         self.drawn_exercises[value].config(font=('Helvetica', self.font - 2, 'bold'), foreground='grey')
+        self.drawn_repetitions[value].config(font=('Helvetica', self.font - 2, 'bold'), foreground='grey')
 
     def on_leave(self, event, value):
         self.drawn_exercises[value].config(font=('Helvetica', self.font, 'bold'), foreground='black')
+        self.drawn_repetitions[value].config(font=('Helvetica', self.font, 'bold'), foreground='black')
 
     def on_click(self, event, value):
         self.controller.show_pop_up(self.workout[value])

@@ -8,7 +8,7 @@ class PopUpScreen(tk.Frame):
         self.exercise = None
         self.drawn_labels = []
         self.master = master
-        self.group_list = ('Název:','Popis:','Partie:','Obtížnost:','Počet sérii:','Počet opakování:')
+        self.group_list = ('Název:', 'Popis:', 'Partie:', 'Obtížnost:', 'Počet sérii:', 'Počet opakování:')
         self.values = ()
         self.videoplayer = None
 
@@ -30,7 +30,7 @@ class PopUpScreen(tk.Frame):
         self.style.configure('Custom1.TLabel', font=('Helvetica', self.font), foreground='white', background=self.color)
 
         self.video_frame = tk.Frame(self, bg='green')
-        self.video_frame.config(width=self.screen_width/2, height=self.screen_height/2)
+        self.video_frame.config(width=self.screen_width / 2, height=self.screen_height / 2)
         self.video_frame.pack(side='top')
         self.video_frame.pack_propagate(False)
 
@@ -67,9 +67,3 @@ class PopUpScreen(tk.Frame):
         self.videoplayer.pause()
         self.videoplayer.seek(0)
         self.videoplayer.play()
-
-
-
-
-
-
