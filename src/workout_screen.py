@@ -17,7 +17,6 @@ class WorkoutScreen(tk.Frame):
         self.font = 60
 
         switch_frame_back_button = ttk.Button(self, text='Zpatky', command=lambda: controller.show_frame('InputScreen'), style='Custom.TButton')
-        #switch_frame_back_button.pack(side="bottom")
         switch_frame_back_button.place(x=0, y=0)
 
         self.style = ttk.Style(self)
@@ -88,6 +87,7 @@ class WorkoutScreen(tk.Frame):
 
     def on_enter(self, event, value):
         self.exercises_frame.pack_propagate(False)
+        self.repetitions_frame.pack_propagate(False)
         self.drawn_exercises[value].config(font=('Helvetica', self.font - 2, 'bold'), foreground='grey')
         self.drawn_repetitions[value].config(font=('Helvetica', self.font - 2, 'bold'), foreground='grey')
 

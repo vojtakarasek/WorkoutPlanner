@@ -8,7 +8,7 @@ class PopUpScreen(tk.Frame):
         self.exercise = None
         self.drawn_labels = []
         self.master = master
-        self.group_list = ('Název:', 'Popis:', 'Partie:', 'Obtížnost:', 'Počet sérii:', 'Počet opakování:')
+        self.group_list = ('Název:', 'Partie:', 'Obtížnost:', 'Počet sérii:', 'Počet opakování:')
         self.values = ()
         self.videoplayer = None
 
@@ -19,7 +19,7 @@ class PopUpScreen(tk.Frame):
         exit_button.place(x=0, y=0)
         self.config(bg='black')
 
-        self.font = 40
+        self.font = 30
         self.color = 'black'
 
         # monitor size
@@ -28,6 +28,7 @@ class PopUpScreen(tk.Frame):
 
         self.style = ttk.Style()
         self.style.configure('Custom1.TLabel', font=('Helvetica', self.font), foreground='white', background=self.color)
+        self.style.configure('Custom2.TLabel', font=('Helvetica', self.font), foreground='white', background=self.color)
 
         self.video_frame = tk.Frame(self, bg='green')
         self.video_frame.config(width=self.screen_width / 2, height=self.screen_height / 2)
@@ -39,7 +40,7 @@ class PopUpScreen(tk.Frame):
 
     def set_exercise(self, exercise):
         self.exercise = exercise
-        self.values = (exercise.name, exercise.description, exercise.body_part, exercise.level, exercise.series,
+        self.values = (exercise.name, exercise.body_part, exercise.level, exercise.series,
                        exercise.repetitions)
         n = 1
 
@@ -54,6 +55,18 @@ class PopUpScreen(tk.Frame):
             label.pack(side='top', anchor='w')
             self.drawn_labels.append(label)
             n += 1
+
+        popis_label = ttk.Label(self.details_frame, text=f'Popis:', style='Custom2.TLabel')
+        popis_label.pack(side='top', anchor='w')
+        self.drawn_labels.append(popis_label)
+        # list of split description string
+        description_sentences = exercise.description.split(". ")
+
+        # each split sentence has its own line, so it fits on screen
+        for sentence in description_sentences:
+            description_label = ttk.Label(self.details_frame, text=f'{sentence}', style='Custom2.TLabel')
+            description_label.pack(side='top', anchor='w', padx=50)
+            self.drawn_labels.append(description_label)
 
     def exit_button(self):
         for label in self.drawn_labels:

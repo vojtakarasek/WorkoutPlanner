@@ -1,0 +1,555 @@
+{
+  "exercises": [
+    {
+      "name": "Upažování s jednoručkami (Dumbbell Lateral Raise)",
+      "description": "Paže lehce pokrčte v loktech podél těla a dlaně směřujte k bokům. S výdechem kontrolovaným pohybem upažte tak, že lokty zůstávají stále mírně pokrčené. Snažte se dostat činky do výše vašich ramen nebo lehce nad. V horní pozici můžete zařadit sekundovou výdrž",
+      "body_parts": ["jednoručky"],
+      "level": "Středně pokročilý",
+      "repetitions": "12",
+      "series": "4",
+      "equipment": ["jednoručky"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Předpažování s jednoručkami (Dumbbell Front Raise)",
+      "description": "Paže lehce pokrčte v loktech podél těla a dlaně směřujte k bokům. S výdechem kontrolovaným pohybem předpažte. Lokty nechte mírně pokrčené a činky zkuste dostat do výšky nad ramena. V horní pozici můžete zařadit sekundovou výdrž",
+      "body_parts": ["ramena"],
+      "level": "Středně pokročilý",
+      "repetitions": "12",
+      "series": "4",
+      "equipment": ["jednoručky"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Arnoldovy tlaky (Arnold Dumbbell Press)",
+      "description": "Posaďte se na posilovací lavici se vzpřímenými zády. Uchopte jednoručky, zvedněte je do výše ramen a dlaně vytočte k sobě. S výdechem kontrolovaným pohybem zvedejte ruce do vzpažení. Současně plynule otáčejte činky tak, aby v horní poloze dlaně směřovaly vpřed",
+      "body_parts": ["ramena"],
+      "level": "Pokročilý",
+      "repetitions": "12",
+      "series": "4",
+      "equipment": ["jednoručky"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Tlaky s jednoručkami vsedě (Seated Dumbbell Press)",
+      "description": "Posaďte se na posilovací lavici se vzpřímenými zády, nohy pokrčte v kolenou a chodidla pevně zapřete do podložky. Uchopte jednoručky, zvedněte je do výše ramen a dlaně vytočte vpřed.  S výdechem kontrolovaným pohybem vzpažte do napnutých loktů, dlaně po celou dobu směřují vpřed",
+      "body_parts": ["ramena"],
+      "level": "Středně pokročilý",
+      "repetitions": "12",
+      "series": "4",
+      "equipment": ["jednoručky", "posilovací lavice"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Tlaky s osou vsedě (Seated Barbell Press)",
+      "description": "Posaďte se na posilovací lavici se vzpřímenými zády, nohy pokrčte v kolenou a chodidla pevně zapřete do podložky. Uchopte osu nadhmatem a zvedněte ji pod bradu před horní část hrudníku. S výdechem kontrolovaným pohybem zvedejte ruce do vzpažení. Poté se s nádechem plynule vraťte do výchozí polohy a navažte dalším opakováním",
+      "body_parts": ["ramena"],
+      "level": "pokročilý",
+      "repetitions": "12",
+      "series": "4",
+      "equipment": ["osa"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Tlaky s osou vestoje (Barbell Press)",
+      "description": "Postavte se s chodidly na šíři vašich boků a uchopte osu nadhmatem oběma rukama. Narovnejte se a mírně pokrčte kolena. Zvedněte osu až pod bradu těsně před horní část hrudníku. S výdechem kontrolovaným pohybem vzpažte",
+      "body_parts": ["ramena"],
+      "level": "Pokročilý",
+      "repetitions": "10",
+      "series": "4",
+      "equipment": ["osa"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Předpažení s kotoučem a rotací (Bus Driver)",
+      "description": "Postavte se s chodidly na šíři vašich boků a uchopte kotouč oběma rukama za boční strany. S výdechem kontrolovaným pohybem předpažte a zároveň kotouč vytočte ve směru hodinových ručiček,.    čímž se jedna ruka dostane nahoru a druhá dolů. Pak ho vraťte do výchozí polohy a zase předpažte a vytočte proti směru hodinových ručiček",
+      "body_parts": ["ramena"],
+      "level": "Středně pokročilý",
+      "repetitions": "15 na každou stranu",
+      "series": "4",
+      "equipment": ["kotouč"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Plank s upažením",
+      "description": "Začnětě v klasické poloze planku, s nohama mírně od sebe pro lepčí stabilitu. Následně upažíme jednu ruku směrem vzhůru pod úhlem 45 stupňů. Zvedáme ji do výšky našich ramen. V krajní poloze chvíli vydržíme (1–3 sekundy)",
+      "body_parts": ["ramena", "břicho"],
+      "level": "Středně pokročilý",
+      "repetitions": "15 na každou stranu",
+      "series": "3",
+      "equipment": [""],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Shyby na hrazdě s nadhmatem",
+      "description": "Zpevníme střed těla zatnutím břicha a hýždí. Sesadíme a zpevníme lopatky a s výdechem se přitáhneme směrem nahoru k tyči. S pomalým nádechem se pak kontrolovaně spustíme do základní pozice",
+      "body_parts": ["ramena", "záda", "paže"],
+      "level": "Pokročilý",
+      "repetitions": "8",
+      "series": "3",
+      "equipment": ["hrazda"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Mrtvý tah (Deadlift)",
+      "description": "Postavte se s chodidly na šíři vašich boků a osu uchopte nadhmatem na šířku vašich ramen. Pomocí aktivace svalů dolních končetin a zad plynule zvedněte činku ze země až do narovnání kolen a trupu. Dráha činky vede těsně před nohama. Poté s nádechem kontrolovaně spouštějte činku na zem a následně navažte dalším opakováním",
+      "body_parts": ["záda", "stehna", "lýtka"],
+      "level": "Pokročilý",
+      "repetitions": "15",
+      "series": "3",
+      "equipment": ["osa"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Přitahování osy v předklonu nadhmatem (Barbell Bent Over Row)",
+      "description": " Postavte se s chodidly na šíři vašich boků a lehce pokrčte kolena. Uchopte činku nadhmatem na šířku vašich ramen a zvedněte ji do výše ke kolenům. S výdechem pomocí kontrakce svalů zad přitáhněte činku k bokům. Poté ji kontrolovaně vraťte zpět ke kolenům a navažte dalším opakováním",
+      "body_parts": ["záda"],
+      "level": "Středně pokročilý",
+      "repetitions": "12",
+      "series": "3",
+      "equipment": ["osa"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Stahování horní kladky nadhmatem (Wide Grip Pulldown)",
+      "description": "Posaďte se čelem k horní kladce, nadhmatem uchopte tyč. Úchop je o něco širší, než je rozpětí vašich ramen. S výdechem pomocí aktivace svalů zad stáhněte tyč směrem k hrudníku. V krajní pozici (dole) můžete zařadit 1–2sekundovou výdrž",
+      "body_parts": ["záda", "paže"],
+      "level": "Středně pokročilý",
+      "repetitions": "12",
+      "series": "3",
+      "equipment": ["horní kladka"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Stahování horní kladky podhmatem (Reverse Grip Pulldown)",
+      "description": "Posaďte se čelem k horní kladce, podhmatem uchopte tyč. Úchop je užší než vzdálenost vašich ramen. S výdechem pomocí aktivace svalů zad a paží stáhněte tyč směrem k hrudníku. V krajní pozici můžete zařadit 1–2sekundovou výdrž",
+      "body_parts": ["záda", "paže"],
+      "level": "Středně pokročilý",
+      "repetitions": "12",
+      "series": "3",
+      "equipment": ["horní kladka"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Přítahy jednoruček na lavici (Dumbbell Incline Bench Row)",
+      "description": "Lehněte si na lavici, která je zvednutá do úhlu 30–45 stupňů tak, abyste měli hrudník na horní části zádové opěrky. Uchopte jednoručky, předpažte s nataženýma rukama a aktivujte střed těla. S výdechem pomocí aktivace svalů zad přitáhněte jednoručky směrem k pasu. Lokty směřují od těla a v krajní pozici stáhněte k sobě lopatky",
+      "body_parts": ["záda"],
+      "level": "Středně pokročilý",
+      "repetitions": "12",
+      "series": "3",
+      "equipment": ["nastavitelná lavice", "jednoručky"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Přítahy jednoručky v kleče na lavici (One Arm Dumbbell Row)",
+      "description": "Pravou nohou si klekněte na vodorovnou lavici, předkloňte se a pravou nataženou rukou se opřete. Levou rukou uchopte jednoručku a s výdechem přitáhněte jednoručku směrem k pasu. Loket směřuje vzhůru a záda se snažte po celou dobu cviku držet ve stabilní poloze. Nejprve odcvičte sérii na jednu ruku a pak na druhou",
+      "body_parts": ["záda", "paže"],
+      "level": "Středně pokročilý",
+      "repetitions": "12 na každou ruku",
+      "series": "3",
+      "equipment": ["nastavitelná lavice", "jednoručky"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Vzpřimování na šikmé lavici (hyperextenze)",
+      "description": "Horní hrana opěrky je o něco níže pod kyčlemi, aby nebránila v předklonu. Paže jsou křižmo na hrudníku, podél těla nebo za hlavou. Záda jsou držená rovně u cviku se nehrbíme. Rovný předklon končí v momentě, kdy se bederní páteř začíná zakulacovat, poté s výdechem vzpřimujeme trup",
+      "body_parts": ["záda", "stehna"],
+      "level": "Středně pokročilý",
+      "repetitions": "15",
+      "series": "4",
+      "equipment": ["hyperextenční trenažer zad"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "kliky(push-ups)",
+      "description": "Ruce jsou opřené o zem s mírně vytočenými dlaněmi směrem ven. Vzdálenost rukou je mírně větší, než je šíře ramen. Při pohybu dolů se nadechuj, při pohybu nahoru vydechuj",
+      "body_parts": ["prsa", "paže"],
+      "level": "Začátečník",
+      "repetitions": "12",
+      "series": "4",
+      "equipment": [""],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Bench press",
+      "description": "Lehněte si zády na vodorovnou lavici a lopatky držte u sebe a činku uchopte nadhmatem. Šíře úchopu je o něco větší než šířka vašich ramen. Zvedněte činku do výchozí polohy nad hrudník a poté ji s nádechem pomalu spouštějte na hrudník. Ve spodní fázi se osa lehce dotkne hrudi a paže s tělem svírají úhel 45-60 stupňů",
+      "body_parts": ["prsa", "paže"],
+      "level": "Středně pokročilý",
+      "repetitions": "10",
+      "series": "3",
+      "equipment": ["stroj na bench"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Rozpažování s jednoručkami",
+      "description": "Lehněte si na vodorovnou lavici na záda, uchopte jednoručky, předpažte a dlaně vytočte směrem k sobě. Lokty mírně pokrčte a aktivujte střed těla. S nádechem plynulým pohybem pomalu přejděte do rozpažení, lokty se snažte stále držet v mírném pokrčení. S výdechem pomocí kontrakce prsních svalů vraťte paže do výchozí polohy",
+      "body_parts": ["prsa"],
+      "level": "Středně pokročilý",
+      "repetitions": "12",
+      "series": "3",
+      "equipment": ["jednoručky", "nastavitelná lavice"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Tlaky s jednoručkami na šikmé lavici hlavou nahoru",
+      "description": " Lehněte si na pozitivně nakloněnou lavici (hlava je nahoře), která je zvednutá do úhlu 30–45 stupňů. Uchopte jednoručky nadhmatem, pokrčte lokty a zvedněte je po výše pod úroveň ramen. S výdechem pomocí kontrakce prsních svalů předpažte až do téměř úplného napnutí paží v loktech. Při pohybu směrem vzhůru tlačte jednoručky k sobě",
+      "body_parts": ["prsa", "paže"],
+      "level": "Středně pokročilý",
+      "repetitions": "12",
+      "series": "3",
+      "equipment": ["jednoručky", "nastavitelná lavice"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Pullover s jednoručkou",
+      "description": "Položte horní část zad z boku na vodorovnou lavici. Nohy se opírají celou plochou chodidel o zem a jsou pokrčené v kolenou. Vzpažte a uchopte jednoručku za horní část. S výdechem pomocí kontrakce svalů paží a hrudníku předpažte",
+      "body_parts": ["prsa", "paže"],
+      "level": "Středně pokročilý",
+      "repetitions": "12",
+      "series": "3",
+      "equipment": ["jednoručky", "nastavitelná lavice"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Diamantové kliky",
+      "description": "Položte ruce na zem tak, aby se palce a ukazováčky spojily a tvořily diamant. Dále pokračujte jako u standartního kliku",
+      "body_parts": ["prsa", "paže"],
+      "level": "Pokročilý",
+      "repetitions": "8",
+      "series": "2",
+      "equipment": [""],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Incline bench press",
+      "description": "Lehněte si na nastavitelnou lavici, která je v úhlu 15-45 stupňů. Činku uchopte nadhmatem, šíře úchopu je o něco větší než šířka vašich ramen. S nádechem spoštějte činku směrem k hrudníku a s výdechem zpět nahoru",
+      "body_parts": ["prsa", "paže"],
+      "level": "Středně pokročilý",
+      "repetitions": "10",
+      "series": "3",
+      "equipment": ["stroj na bench"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Hand release klik",
+      "description": "Začněte v pozici planku s rukama umístěnýma pod rameny. S nádechem se spouštějte se až do úplného doteku hrudníku se zemí. Na chvíli úplně uvolněte ruce od země (hand release). S výdechem jděte opět nahoru",
+      "body_parts": ["prsa", "paže"],
+      "level": "Začátečník",
+      "repetitions": "12",
+      "series": "3",
+      "equipment": [""],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Skull crushers",
+      "description": "Lehněte si na rovnou lavici, činku džte nad hlavou jako u bench pressu. Pohybem v loktech si činku pomalu snižte k čelu. Paže při tomu cviku zůstavájí v fixní pozici kolmo k podložce",
+      "body_parts": ["paže"],
+      "level": "Střeně pokročilý",
+      "repetitions": "8",
+      "series": "4",
+      "equipment": ["osa", "nastavitelná lavice"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Bicepsový zdvih",
+      "description": "Jednoručky chyťte podhmatem a ruce dejte podél těla. Střídavě zvedejte jednoručky k ramenům. Při dosažení nejvyšší polohy vydechněte. Nadechujte při spouštění činky dolů",
+      "body_parts": ["paže"],
+      "level": "Začátečník",
+      "repetitions": "12 na každou ruku",
+      "series": "3",
+      "equipment": ["Jednoručky"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Koncentrovaný bicepsový zdvih",
+      "description": "Posaďte se na rovnou lavici a zepřete si loket o koleno. Jednoručku chyťte podhmatem a zvedejte ji k rameni. Cvik provádíme na každou ruku zvlášť",
+      "body_parts": ["paže"],
+      "level": "Středně pokročilý",
+      "repetitions": "12",
+      "series": "3",
+      "equipment": ["jednoručky", "nastavitelná lavice"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Sed-lehy",
+      "description": "Lehněte si na záda, pokrčte nohy v kolenou a paty nebo celá chodidla nechte na zemi. Dotýkejte se jen zlehka prsty hlavy a lokty držte otevřené. Když máte stále tendence stahovat lokty k sobě, dejte si ruce křížem na hrudník. S výdechem pomocí aktivace břišních svalů zvedněte postupně hlavu, horní i spodní část zad z podložky až do napřímení celého trupu",
+      "body_parts": ["břicho"],
+      "level": "Začátečník",
+      "repetitions": "15",
+      "series": "4",
+      "equipment": [""],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "V-Zdvih (sklapovačky)",
+      "description": "Lehněte si na záda a vzpažte, nohy nechte natažené a zvedněte je pár centimetrů nad zem. S výdechem pomocí aktivace břišních svalů zvedněte hlavu a celý trup z podložky. Zároveň přitáhněte nohy, které jsou lehce pokrčené v kolenech a snažte se rukama dotknout chodidel. Poté se s nádechem vraťte do výchozí polohy a cvik zopakujte",
+      "body_parts": ["břicho"],
+      "level": "Středně pokročilý",
+      "repetitions": "3",
+      "series": "15",
+      "equipment": [""],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Hollow hold",
+      "description": "Lehněte si na záda a vzpažte. Nohy nechte natažené a zvedněte je přibližně 20–30 centimetrů nad zem. Volně dýchejte a snažte se tuto pozici udržet alespoň 10 sekund. Když nohy více pokrčíte a zvednete výš, cvik bude snažší",
+      "body_parts": ["břicho"],
+      "level": "Středně pokročilý",
+      "repetitions": "20-30s",
+      "series": "4",
+      "equipment": [""],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Sprinter",
+      "description": "Lehněte si na záda s nataženýma nohama. Hlavu a chodidla zvedněte pár centimetrů nad podložku a paže nechte volně položené podél těla. S výdechem a aktivací břišních svalů zvedněte a pokrčte levou nohu a zároveň zvedněte pravou paži a dlaň přibližte k levému chodidlu. Poté se s nádechem vraťte do výchozí polohy a to stejné proveďte na druhou stranu",
+      "body_parts": ["břicho"],
+      "level": "Středně pokročilý",
+      "repetitions": "20 na každou stranu",
+      "series": "3",
+      "equipment": [""],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Reverse Crunch",
+      "description": "Lehněte si na záda a paže položte volně kolem těla. Nohy lehce pokrčte v kolenou a přednožte. S výdechem pomocí aktivace břišních svalů zvedněte pánev a spodní část zad několik centimetrů nad zem. S nádechem se vraťte do výchozí polohy a cvik zopakujte",
+      "body_parts": ["břicho"],
+      "level": "Středně pokročilý",
+      "repetitions": "15",
+      "series": "3",
+      "equipment": [""],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Horolezec (Mountain Climber)",
+      "description": "Začněte v pozici planku na natažených rukou. S výdechem pokrčte jednu nohu a přitáhněte ji směrem k lokti natažené paže. Poté ji vraťte do výchozí polohy a to stejné hned zopakujte na druhou stranu",
+      "body_parts": ["břicho"],
+      "level": "Středně pokročilý",
+      "repetitions": "60s",
+      "series": "3",
+      "equipment": [""],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Russian Twist",
+      "description": "Sedněte si na podložku se vzpřímenými zády, která jsou mírně zakloněná dozadu. Nohy pokrčte v kolenou do 90 stupňů a zvedněte je ze země až do výšky, kdy jsou holeně rovnoběžné s podlahou. S výdechem proveďte rotaci trupu i paží. Cvik se dá provádět i se zátěží v rukou",
+      "body_parts": ["břicho"],
+      "level": "Středně pokročilý",
+      "repetitions": "20 rotací na každou stranu",
+      "series": "3",
+      "equipment": [""],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Plank",
+      "description": "Vyvarujte se prohýbání v zádech, klesání boků k zemi, nadměrné zvedání pánve vzhůru. Cvik se dá prováděť i se zátěží na spodních zádech (nejčastěji kotouč)",
+      "body_parts": ["břicho"],
+      "level": "Začátečník",
+      "repetitions": "90s",
+      "series": "2",
+      "equipment": [""],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Side Plank",
+      "description": "Položte se na bok s nataženýma nohama. Chodidla nechte položená na sobě nebo za sebou a udělejte vzpor na předloktí spodní ruky a horní paži zvedněte vzhůru ke stropu",
+      "body_parts": ["břicho"],
+      "level": "Začátečník",
+      "repetitions": "60s na každou stranu",
+      "series": "2",
+      "equipment": [""],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Superman",
+      "description": " Lehněte si na břicho s nataženýma nohama, ruce vzpažte. S výdechem aktivujte střed těla a zvedněte ruce, hlavu, hrudník a nohy pár centimetrů nad zem. V horní pozici můžete pár sekund setrvat, poté se s nádechem vraťte do výchozí polohy",
+      "body_parts": ["břicho"],
+      "level": "Začátečník",
+      "repetitions": "12",
+      "series": "3",
+      "equipment": [""],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Kmitání nohama",
+      "description": "Lehněte si na záda. Hlavu, horní část zad a natažené nohy zvedněte pár centimetrů nad zem. Paže položte volně na zem podél těla a použijte je jako oporu. Aktivujte břišní svaly a začněte kmitat nataženýma nohama ze strany na stranu",
+      "body_parts": ["břicho"],
+      "level": "Středně pokročilý",
+      "repetitions": "30s",
+      "series": "3",
+      "equipment": [""],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Bicycle Crunch",
+      "description": "ehněte si na záda a natažené nohy zvedněte pár centimetrů nad zem. Dotýkejte se jen zlehka prsty hlavy a lokty držte otevřené. Aktivujte břišní svaly a přitáhněte levé koleno k pravému lokti a poté hned pravé koleno k levému lokti",
+      "body_parts": ["břicho"],
+      "level": "Středně pokročilý",
+      "repetitions": "15 na každou nohu",
+      "series": "3",
+      "equipment": [""],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Oblique Crunches",
+      "description": "Lehněte si na záda, nohy pokrčte v kolenou a položte je na jednu stranu. Dotýkejte se jen zlehka prsty hlavy a lokty držte otevřené. S výdechem pomocí aktivace šikmých břišních svalů zvedněte hlavu a horní část zad z podložky. S nádechem se vraťte do výchozí polohy a cvik zopakujte",
+      "body_parts": ["břicho"],
+      "level": "Středně pokročilý",
+      "repetitions": "15 na každou stranu",
+      "series": "3",
+      "equipment": [""],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Dřepy s osou",
+      "description": "Položte si osu za krk a chyťte ji oběma rukama vedle ramen s tím, že lokty směřují dolů. Nadechněte se a pohybem pánve dozadu a dolů udělejte dřep. Hloubku dřepu zvolte tak, aby se vám podařilo zachovat přirozené zakřivení páteře a dokázali jste se z této pozice zvednout. Osa kolene, kotníku a špičky nohy zůstává v jedné rovině",
+      "body_parts": ["stehna"],
+      "level": "Pokročilý",
+      "repetitions": "6",
+      "series": "5",
+      "equipment": ["osa"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Výpad vzad jednoručky/kettlebell",
+      "description": "Nadechněte se, váhu přeneste na jednu nohu a druhou udělejte kontrolovaně výpad vzad. Dostaňte se do hloubky, kdy vaše stehno svírá s lýtkem v koleni přibližně 90 stupňů, nebo ještě hlouběji. Kolenem zadní nohy se můžete lehce dotknout podložky",
+      "body_parts": ["stehna"],
+      "level": "Začátečník",
+      "repetitions": "15 na každou nohu",
+      "series": "3",
+      "equipment": ["jednoručky", "kettlebell"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Výpad vpřed jednoručky/kettlebell",
+      "description": "Nadechněte se, váhu přeneste na jednu nohu a druhou udělejte kontrolovaně výpad vpřed. Dostaňte se do hloubky, kdy vaše stehno svírá s lýtkem v koleni přibližně 90 stupňů, nebo ještě hlouběji. Kolenem zadní nohy se můžete lehce dotknout podložky",
+      "body_parts": ["stehna"],
+      "level": "Začátečník",
+      "repetitions": "15 na každou nohu",
+      "series": "3",
+      "equipment": ["jednoručky", "kettlebell"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Bulharský dřep",
+      "description": "Položte jednu nohu nártem na lavici a s nádechem pokrčte koleno přední nohy a udělejte výpad na místě. Ve spodní poloze se můžete kolenem zadní nohy lehce dotknout podložky. Po odcvičení jedné série vyměňte nohy a stejný cvik proveďte na druhou stranu. Podle libosti lze využít jednoruček či kettleballu nebo osy",
+      "body_parts": ["stehna"],
+      "level": "Středně pokročilý",
+      "repetitions": "12 na každou nohu",
+      "series": "3",
+      "equipment": ["jednoručky", "kettlebell"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Hip Thrust",
+      "description": "Sedněte si na zem a horní částí zad se opřete o lavici. Tyč s naloženými kotouči posuňte nad pánev a chytněte ji oběma rukama vedle boků. Nadechněte se a aktivací svalů hýždí a stehen kontrolovaně zvedejte pánev, až dostanete kyčle přibližně na úroveň kolen. Sekundu až dvě vydržte a poté pánev kontrolovaně spusťte dolů",
+      "body_parts": ["stehna"],
+      "level": "Středně pokročilý",
+      "repetitions": "8",
+      "series": "5",
+      "equipment": ["osa", "nastavitelná lavice"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Zakopávání",
+      "description": "Zalehněte ke stroji na zakopávání a jeďte. ",
+      "body_parts": ["stehna"],
+      "level": "Středně pokročilý",
+      "repetitions": "10",
+      "series": "3",
+      "equipment": ["stroj na zakopávání"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Good Morning",
+      "description": "Stoj mírně rozkročný. Osu pevně držíme buď na horní části trapézů, nebo na střední části trapézů a zadní části ramen. S nádechem jdeme pohybem boků vzad do mírného předklonu s napnutýma nebo mírně pokrčenýma nohama",
+      "body_parts": ["stehna"],
+      "level": "Středně pokrořilý",
+      "repetitions": "6",
+      "series": "3",
+      "equipment": ["osa"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Předkopávání",
+      "description": "Kontrakcí přední strany stehen zvedáme nohy do natažení, pohyb vychází z kolenního kloubu",
+      "body_parts": ["stehna"],
+      "level": "Středně pokrořilý",
+      "repetitions": "10",
+      "series": "3",
+      "equipment": ["stroj na předkopávání"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Výstupy na bednu se zátěží",
+      "description": "Nadechněte se, pokrčte koleno jedné nohy a její chodidlo položte na lavici. Přeneste váhu na zvednutou nohu a pomocí aktivace svalů hýždí a stehen vystupte na lavici i druhou nohou. Narovnejte se a poté zase jednou a pak druhou nohou kontrolovaně sestupte z lavice. Hned navažte dalším opakováním a tentokrát začněte druhou nohou",
+      "body_parts": ["stehna", "lýtka"],
+      "level": "Začátečník",
+      "repetitions": "10 a každou nohu",
+      "series": "4",
+      "equipment": ["jednoručky", "kettlebell", "bedna"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Skoky na bednu",
+      "description": "Udělejte pohyb v bocích zhruba do ¼ dřepu a rychlým pohupem s rukami dopředu se odražte, a vyskočte na bednu",
+      "body_parts": ["stehna", "lýtka"],
+      "level": "Začátečník",
+      "repetitions": "15",
+      "series": "3",
+      "equipment": ["bedna"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Skákání přes švihadlo",
+      "description": "Skákajte sounož, dávejte pozor abyste skákali váhradně na špičkách",
+      "body_parts": ["lýtka"],
+      "level": "Začátečník",
+      "repetitions": "2 min",
+      "series": "2",
+      "equipment": ["švihadlo"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Výpony",
+      "description": "Postavte se k nějkému opěrnému bodu (např. žebřiny) a jednou rukou se ho přidržujte. Kontrolovaně se zvedejte na špičky, vydržte v horní pozici 1-2 vteřiny a poté klesňete",
+      "body_parts": ["lýtka"],
+      "level": "Začátečník",
+      "repetitions": "30",
+      "series": "4",
+      "equipment": [""],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Výpony na kotouči",
+      "description": "Postavte se k nějkému opěrnému bodu (např. žebřiny) a jednou rukou se ho přidržujte. Stoupněte si na kotouč tak, aby špičky byly oproti zbytku chodidla vyvíšené. Kontrolovaně se zvedejte na špičky, vydržte v horní pozici 1-2 vteřiny a poté klesňete",
+      "body_parts": ["lýtka"],
+      "level": "Začátečník",
+      "repetitions": "30",
+      "series": "4",
+      "equipment": ["kotouč"],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Dřepy s výskokem",
+      "description": "POstavte se do širokého postavení nohou. Dřepněte si jako u normálního dřepu a poté se rychle a výbušně odrazte od země. Přistávejte hladce a tak abyste mohli rovnou pokračovat",
+      "body_parts": ["lýtka", "stehna"],
+      "level": "Začátečník",
+      "repetitions": "20",
+      "series": "4",
+      "equipment": [""],
+      "video": "../data/25.mp4"
+    },
+    {
+      "name": "Skoky na Bosu",
+      "description": "Postavte se před bosu s nohami na úrovni ramen. Skočte na Bosu a udržte rovnováhu, následně seskořte pozadu a cvik opakujte.",
+      "body_parts": ["lýtka", "stehna"],
+      "level": "Středně pokrořilý",
+      "repetitions": "15",
+      "series": "3",
+      "equipment": ["Bosu"],
+      "video": "../data/25.mp4"
+    }
+  ]
+}
+

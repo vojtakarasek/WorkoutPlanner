@@ -5,7 +5,7 @@ from src.workout_planner import WorkoutPlanner
 
 def main():
     repository = ExerciseRepository()
-    repository.load('../data/exercises.json')
+    repository.load('../data/exercises1.json')
     planner = WorkoutPlanner(repository)
     app = GUI()
     app.use_planner(planner)
