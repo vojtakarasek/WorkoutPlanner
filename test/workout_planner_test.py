@@ -41,7 +41,7 @@ def test_add_random_returns_no_duplicates():
 
 def test_add_random_returns_random_exercises():
     planner = WorkoutPlanner(repo)
-    repo.load("../test/test_data/exercises.json")
+    repo.load("../test/test_data/exercises1.json")
     exercises = repo.get_all()
     exercises1 = repo.get_all()
 
@@ -53,7 +53,7 @@ def test_add_random_returns_random_exercises():
 
 def test_remove_random_returns_8_exercises():
     planner = WorkoutPlanner(repo)
-    repo.load("../test/test_data/exercises.json")
+    repo.load("../test/test_data/exercises1.json")
     exercises = repo.get_all()
     exercises_level = []
 
@@ -65,7 +65,7 @@ def test_remove_random_returns_8_exercises():
 
 def test_remove_random_returns_no_duplicates():
     planner = WorkoutPlanner(repo)
-    repo.load("../test/test_data/exercises.json")
+    repo.load("../test/test_data/exercises1.json")
     exercises = repo.get_all()
     exercises_level = []
 
