@@ -1,9 +1,12 @@
 import tkinter as tk
 from tkinter import ttk
 from tkVideoPlayer import TkinterVideo
+import customtkinter as ctk
+
+selected_font = ('Helvetica', 30)
 
 
-class PopUpScreen(tk.Frame):
+class PopUpScreen(ctk.CTkFrame):
     def __init__(self, master, parent, controller):
         self.exercise = None
         self.drawn_labels = []
@@ -12,12 +15,12 @@ class PopUpScreen(tk.Frame):
         self.values = ()
         self.videoplayer = None
 
-        tk.Frame.__init__(self, parent)
+        ctk.CTkFrame.__init__(self, parent)
         self.controller = controller
 
-        exit_button = ttk.Button(self, text='Exit', command=self.exit_button)
+        exit_button = ctk.CTkButton(self, text='Exit', command=self.exit_button, font=selected_font)
         exit_button.place(x=0, y=0)
-        self.config(bg='black')
+        self.configure(fg_color='black')
 
         self.font = 30
         self.color = 'black'
@@ -26,16 +29,12 @@ class PopUpScreen(tk.Frame):
         self.screen_width = self.master.winfo_screenwidth()
         self.screen_height = self.master.winfo_screenheight()
 
-        self.style = ttk.Style()
-        self.style.configure('Custom1.TLabel', font=('Helvetica', self.font), foreground='white', background=self.color)
-        self.style.configure('Custom2.TLabel', font=('Helvetica', self.font), foreground='white', background=self.color)
-
-        self.video_frame = tk.Frame(self, bg='green')
-        self.video_frame.config(width=self.screen_width / 2, height=self.screen_height / 2)
+        self.video_frame = ctk.CTkFrame(self, fg_color='green')
+        self.video_frame.configure(width=self.screen_width / 2, height=self.screen_height / 2)
         self.video_frame.pack(side='top')
         self.video_frame.pack_propagate(False)
 
-        self.details_frame = tk.Frame(self, bg=self.color)
+        self.details_frame = ctk.CTkFrame(self, fg_color=self.color)
         self.details_frame.pack(side='top')
 
     def set_exercise(self, exercise):
@@ -51,12 +50,12 @@ class PopUpScreen(tk.Frame):
         self.videoplayer.bind("<<Ended>>", self.video_restart)
 
         for group in zip(self.group_list, self.values):
-            label = ttk.Label(self.details_frame, text=f'{group[0]} {group[1]}', style='Custom1.TLabel')
+            label = ctk.CTkLabel(self.details_frame, text=f'{group[0]} {group[1]}', font=selected_font)
             label.pack(side='top', anchor='w')
             self.drawn_labels.append(label)
             n += 1
 
-        popis_label = ttk.Label(self.details_frame, text=f'Popis:', style='Custom2.TLabel')
+        popis_label = ctk.CTkLabel(self.details_frame, text=f'Popis:', font=selected_font)
         popis_label.pack(side='top', anchor='w')
         self.drawn_labels.append(popis_label)
         # list of split description string
@@ -64,7 +63,7 @@ class PopUpScreen(tk.Frame):
 
         # each split sentence has its own line, so it fits on screen
         for sentence in description_sentences:
-            description_label = ttk.Label(self.details_frame, text=f'{sentence}', style='Custom2.TLabel')
+            description_label = ctk.CTkLabel(self.details_frame, text=f'{sentence}', font=selected_font)
             description_label.pack(side='top', anchor='w', padx=50)
             self.drawn_labels.append(description_label)
 

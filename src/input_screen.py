@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import ttk
+import customtkinter as ctk
 
 from src.level_enum import Level
 from user_requirements import UserRequirements
@@ -8,18 +8,18 @@ from body_part_enum import BodyPart
 values = ['', 'břicho', 'záda', 'paže', 'prsa', 'ramena', 'stehna', 'lýtka']
 
 color = '#A6A3E5'
-selected_font = 'Helvetica'
+selected_font = ('Helvetica', 30)
 
 
-class InputScreen(tk.Frame):
+class InputScreen(ctk.CTkFrame):
     def __init__(self, master, parent, controller):
         self.master = master
 
-        tk.Frame.__init__(self, parent)
+        ctk.CTkFrame.__init__(self, parent)
         self.controller = controller
         self.pack()
         self.pack_propagate(True)
-        switch_frame_button = ttk.Button(self, text='Naplánovat', command=self.on_planning_clicked)
+        switch_frame_button = ctk.CTkButton(self, text='Naplánovat', command=self.on_planning_clicked, font=selected_font)
         switch_frame_button.grid(column=1, row=9, sticky='nsew')
 
         # variable helping with combo boxes counting
@@ -30,29 +30,32 @@ class InputScreen(tk.Frame):
         self.screen_height = self.master.winfo_screenheight()
 
         # background color
-        self.config(bg=color)
+        self.configure(fg_color='dark grey')
 
-        ttk.Label(self, background=color, font=selected_font, text="Vyberte obtížnost").grid(column=1, row=0)
+        ctk.CTkLabel(self, font=selected_font, text="Vyberte obtížnost", width=666).grid(column=1, row=0)
 
         # select level combobox
         self.selected_level = tk.StringVar()
-        lvl_combobox = ttk.Combobox(self, textvariable=self.selected_level)
+        lvl_combobox = ctk.CTkComboBox(self, variable=self.selected_level, values=['začátečník', 'středně pokročilý',
+                                                                                   'pokročilý'], state='readonly',
+                                       font=selected_font, dropdown_font=selected_font, dropdown_fg_color='white',
+                                       dropdown_text_color='black', justify='center')
         lvl_combobox.grid(column=1, row=1, sticky='nsew')
-        lvl_combobox['values'] = ('začátečník', 'středně pokročilý', 'pokročilý')
-        lvl_combobox['state'] = 'readonly'
 
-        ttk.Label(self, background=color, font=selected_font, text="Vyberte část těla, kterou chcete posilovat").grid(
+        ctk.CTkLabel(self, font=selected_font, text="Vyberte část těla, kterou chcete posilovat").grid(
             column=1, row=2)
 
         # select body part combobox
         self.selected_bp_1 = tk.StringVar()
-        bp_combobox = ttk.Combobox(self, textvariable=self.selected_bp_1)
+        bp_combobox = ctk.CTkComboBox(self, variable=self.selected_bp_1, values=values, state='readonly',
+                                      font=selected_font, dropdown_font=selected_font, dropdown_fg_color='white',
+                                      dropdown_text_color='black', justify='center')
         bp_combobox.grid(column=1, row=3, sticky='nsew')
         bp_combobox['values'] = values
         bp_combobox['state'] = 'readonly'
 
         # Button adding comboboxes
-        self.adding_button = ttk.Button(self, text="Přidat více částí těla", command=self.generate_combobox)
+        self.adding_button = ctk.CTkButton(self, text="Přidat více částí těla", command=self.generate_combobox, font=selected_font)
         self.adding_button.grid(column=1, row=8, sticky='nsew')
 
         # Button switching to another frame
@@ -68,9 +71,9 @@ class InputScreen(tk.Frame):
         self.bind("<Configure>", self.place_frame_center)
 
         # configure style
-        self.style = ttk.Style(self)
-        self.style.configure('TButton', font='Helvetica', background=color)
-        self.style.configure('CustomTLabel', font=(selected_font, 30), background=color)
+        #self.style = ttk.Style(self)
+        #self.style.configure('TButton', font='Helvetica', background=color)
+        #self.style.configure('CustomTLabel', font=(selected_font, 30), background=color)
 
     def place_frame_center(self, event):
         frame_width = self.winfo_reqwidth()
@@ -84,18 +87,22 @@ class InputScreen(tk.Frame):
     def generate_combobox(self):
         if self.i == 0:
             self.i += 1
-            ttk.Label(self, background=color, font=selected_font, text='+', padding=5).grid(column=1, row=4)
+            ctk.CTkLabel(self, font=selected_font, text='+').grid(column=1, row=4)
 
-            self.bp_combobox_2 = ttk.Combobox(self, textvariable=self.selected_bp_2)
+            self.bp_combobox_2 = ctk.CTkComboBox(self, variable=self.selected_bp_2, values=values, state='readonly',
+                                                 font=selected_font, dropdown_font=selected_font,
+                                                 dropdown_fg_color='white', dropdown_text_color='black', justify='center')
             self.bp_combobox_2.grid(column=1, row=5, sticky='nsew')
             self.bp_combobox_2['values'] = values
             self.bp_combobox_2['state'] = 'readonly'
         elif self.i == 1:
             self.i += 1
 
-            ttk.Label(self, background=color, font=selected_font, text='+', padding=5).grid(column=1, row=6)
+            ctk.CTkLabel(self, font=selected_font, text='+').grid(column=1, row=6)
 
-            self.bp_combobox_3 = ttk.Combobox(self, textvariable=self.selected_bp_3)
+            self.bp_combobox_3 = ctk.CTkComboBox(self, variable=self.selected_bp_3, values=values, state='readonly',
+                                                 font=selected_font, dropdown_font=selected_font,
+                                                 dropdown_fg_color='white', dropdown_text_color='black', justify='center')
             self.bp_combobox_3.grid(column=1, row=7, sticky='nsew')
             self.bp_combobox_3['values'] = values
             self.bp_combobox_3['state'] = 'readonly'

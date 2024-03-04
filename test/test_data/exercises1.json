@@ -502,7 +502,7 @@
     },
     {
       "name": "Skákání přes švihadlo",
-      "description": "Skákajte sounož, dávejte pozor abyste skákali váhradně na špičkách",
+      "description": "Skákejte sounož, dávejte pozor abyste skákali výhradně na špičkách",
       "body_parts": ["lýtka"],
       "level": "Začátečník",
       "repetitions": "2 min",
@@ -528,7 +528,7 @@
       "repetitions": "30",
       "series": "4",
       "equipment": ["kotouč"],
-      "video": "../data/25.mp4"
+      "video": "../data/mov.mov"
     },
     {
       "name": "Dřepy s výskokem",

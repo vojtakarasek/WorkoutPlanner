@@ -1,12 +1,13 @@
 import tkinter as tk
 from input_screen import color
+import customtkinter as ctk
 
 
-class BackgroundScreen(tk.Frame):
+class BackgroundScreen(ctk.CTkFrame):
     def __init__(self, master, parent, controller):
         self.master = master
 
-        tk.Frame.__init__(self, parent)
+        ctk.CTkFrame.__init__(self, parent)
         self.controller = controller
 
-        self.config(bg=color)
+        self.configure(fg_color='dark grey')

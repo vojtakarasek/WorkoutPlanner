@@ -35,8 +35,8 @@ def test_get_all():
 
 def test_get_for_body_part_with_one_body_part_given():
     repository = ExerciseRepository()
-    repository.load("../test/test_data/json1.json")
-    assert len(repository.get_for_body_part([BodyPart.arms])) == 1
+    repository.load("../test/test_data/exercises1.json")
+    assert len(repository.get_for_body_part([BodyPart.calves])) == 8
 
 
 def test_get_for_body_part_with_two_body_parts_given():
