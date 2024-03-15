@@ -34,7 +34,7 @@ class PopUpScreen(ctk.CTkFrame):
         self.video_frame.pack(side='top')
         self.video_frame.pack_propagate(False)
 
-        self.details_frame = ctk.CTkFrame(self, fg_color=self.color)
+        self.details_frame = ctk.CTkFrame(self, fg_color='grey')#, border_color='green', corner_radius=10000)
         self.details_frame.pack(side='top')
 
     def set_exercise(self, exercise):
@@ -58,13 +58,14 @@ class PopUpScreen(ctk.CTkFrame):
         popis_label = ctk.CTkLabel(self.details_frame, text=f'Popis:', font=selected_font)
         popis_label.pack(side='top', anchor='w')
         self.drawn_labels.append(popis_label)
+
         # list of split description string
         description_sentences = exercise.description.split(". ")
 
         # each split sentence has its own line, so it fits on screen
         for sentence in description_sentences:
             description_label = ctk.CTkLabel(self.details_frame, text=f'{sentence}', font=selected_font)
-            description_label.pack(side='top', anchor='w', padx=50)
+            description_label.pack(side='top', anchor='w')
             self.drawn_labels.append(description_label)
 
     def exit_button(self):

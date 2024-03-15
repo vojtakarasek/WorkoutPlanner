@@ -1,4 +1,3 @@
-from src.body_part_enum import BodyPart
 from src.exercise_repository import ExerciseRepository
 from src.level_enum import Level
 from src.user_requirements import UserRequirements

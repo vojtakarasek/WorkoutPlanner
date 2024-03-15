@@ -17,7 +17,7 @@ class WorkoutScreen(ctk.CTkFrame):
 
         switch_frame_back_button = ctk.CTkButton(self, text='Zpátky',
                                                  command=lambda: controller.show_frame('InputScreen'),
-                                                 font=selected_font)
+                                                 font=('Helvetica', 30))
         switch_frame_back_button.place(x=0, y=0)
 
         self.click_bindings = []

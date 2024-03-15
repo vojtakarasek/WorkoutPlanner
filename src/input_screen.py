@@ -19,8 +19,10 @@ class InputScreen(ctk.CTkFrame):
         self.controller = controller
         self.pack()
         self.pack_propagate(True)
-        switch_frame_button = ctk.CTkButton(self, text='Naplánovat', command=self.on_planning_clicked, font=selected_font)
-        switch_frame_button.grid(column=1, row=9, sticky='nsew')
+        switch_frame_button = ctk.CTkButton(self, text='Naplánovat', command=self.on_planning_clicked,
+                                            font=selected_font, corner_radius=10, border_width=1,border_color='black',
+                                            border_spacing=5)
+        switch_frame_button.grid(column=1, row=10, sticky='nsew')
 
         # variable helping with combo boxes counting
         self.i = 0
@@ -32,7 +34,7 @@ class InputScreen(ctk.CTkFrame):
         # background color
         self.configure(fg_color='dark grey')
 
-        ctk.CTkLabel(self, font=selected_font, text="Vyberte obtížnost", width=666).grid(column=1, row=0)
+        ctk.CTkLabel(self, font=selected_font, text="Vyberte obtížnost", width=666, pady=10).grid(column=1, row=0)
 
         # select level combobox
         self.selected_level = tk.StringVar()
@@ -42,7 +44,7 @@ class InputScreen(ctk.CTkFrame):
                                        dropdown_text_color='black', justify='center')
         lvl_combobox.grid(column=1, row=1, sticky='nsew')
 
-        ctk.CTkLabel(self, font=selected_font, text="Vyberte část těla, kterou chcete posilovat").grid(
+        ctk.CTkLabel(self, font=selected_font, text="Vyberte část těla, kterou chcete posilovat", pady=10).grid(
             column=1, row=2)
 
         # select body part combobox
@@ -55,8 +57,11 @@ class InputScreen(ctk.CTkFrame):
         bp_combobox['state'] = 'readonly'
 
         # Button adding comboboxes
-        self.adding_button = ctk.CTkButton(self, text="Přidat více částí těla", command=self.generate_combobox, font=selected_font)
-        self.adding_button.grid(column=1, row=8, sticky='nsew')
+        self.spacing = ctk.CTkLabel(self, text='').grid(column=1, row=8)
+        self.adding_button = ctk.CTkButton(self, text="Přidat více částí těla", command=self.generate_combobox,
+                                           font=selected_font, corner_radius=10, border_width=1, border_color='black',
+                                           border_spacing=5)
+        self.adding_button.grid(column=1, row=9, sticky='nsew')
 
         # Button switching to another frame
         # self.switch_frame_button = ttk.Button(self.frm1, text='Použít')
