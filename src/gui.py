@@ -5,7 +5,7 @@ from src.workout_planner import WorkoutPlanner
 from input_screen import InputScreen
 from workout_screen import WorkoutScreen
 from background_screen import BackgroundScreen
-from pop_up_screen import PopUpScreen
+from toplevel_window import ToplevelWindow
 
 
 class GUI(tk.Tk):
@@ -26,7 +26,7 @@ class GUI(tk.Tk):
         window.geometry(f'{screen_width}x{screen_height}')
 
         self.frames = {}
-        for F in (InputScreen, WorkoutScreen, BackgroundScreen, PopUpScreen):
+        for F in (InputScreen, WorkoutScreen, BackgroundScreen):
             page_name = F.__name__
             frame = F(master=self, parent=container, controller=self)
             self.frames[page_name] = frame
@@ -35,6 +35,7 @@ class GUI(tk.Tk):
 
         self.show_frame('InputScreen')
         self.planner = None
+        self.toplevel_window = None
 
     def use_planner(self, planner: WorkoutPlanner):
         self.planner = planner
@@ -53,7 +54,11 @@ class GUI(tk.Tk):
         workout_screen.set_workout(workout)
         self.show_frame('WorkoutScreen')
 
-    def show_pop_up(self, exercise):
-        pop_up = self.frames['PopUpScreen']
-        pop_up.set_exercise(exercise)
-        self.show_frame('PopUpScreen')
+    def show_toplevel(self, exercise):
+        if self.toplevel_window is None or not self.toplevel_window.winfo_exists():
+            self.toplevel_window = ToplevelWindow(self)  # create window if its None or destroyed
+        else:
+            self.toplevel_window.focus()
+
+        self.toplevel_window.pass_values(exercise)
+
