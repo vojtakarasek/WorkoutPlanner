@@ -1,7 +1,7 @@
 from tkVideoPlayer import TkinterVideo
 import customtkinter as ctk
 
-selected_font = ('Helvetica', 20)
+selected_font = ('Helvetica', 30)
 
 
 class ToplevelWindow(ctk.CTkToplevel):
@@ -19,20 +19,34 @@ class ToplevelWindow(ctk.CTkToplevel):
         self.screen_width = self.master.winfo_screenwidth()
         self.screen_height = self.master.winfo_screenheight()
 
-        self.geometry(f'{int(self.screen_width / 2)}x{int(self.screen_height / 2)}')
+        self.geometry(f'{int((self.screen_width / 2) + 50)}x{int((self.screen_height / 2) + 95)}')
 
         self.segmented_button = ctk.CTkSegmentedButton(self, values=['Video', 'Popis'],
-                                                       font=selected_font,
-                                                       command=self.segmented_button_callback)
+                                                       font=('Helvetica', 20),
+                                                       command=self.segmented_button_callback, height=30)
         self.segmented_button.pack(side='top', pady=20)
 
         self.label = ctk.CTkLabel(self, text='Zvolte jednu z možností', font=('Helvetica', 50))
         self.label.place(x=400, y=320)
 
+        self.bind("<Configure>", self.initialize())
+
+    def check_if_the_clicked_exercise_is_open(self, name):
+        if name == self.exercise.name:
+            pass
+        else:
+            self.initialize()
+
     def pass_values(self, exercise):
         self.exercise = exercise
         self.values = (exercise.name, exercise.body_part, exercise.level, exercise.series,
                        exercise.repetitions)
+
+        self.title(self.exercise.name)
+
+    def initialize(self):
+        self.destroy()
+
 
     def segmented_button_callback(self, value):
         if value == 'Video':

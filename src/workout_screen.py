@@ -40,9 +40,6 @@ class WorkoutScreen(ctk.CTkFrame):
                                               font=selected_font)
         self.Label_repetitions.pack(side='top', expand=True)
 
-        #self.toplevel_button = ctk.CTkButton(self, text="TopLevel", command=self.open_toplevel)
-        #self.toplevel_button.place(x=20, y=20)
-
     def set_workout(self, workout):
         self.workout = workout
 

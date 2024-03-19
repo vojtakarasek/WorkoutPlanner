@@ -75,11 +75,6 @@ class InputScreen(ctk.CTkFrame):
         self.place(x=0, y=0)
         self.bind("<Configure>", self.place_frame_center)
 
-        # configure style
-        #self.style = ttk.Style(self)
-        #self.style.configure('TButton', font='Helvetica', background=color)
-        #self.style.configure('CustomTLabel', font=(selected_font, 30), background=color)
-
     def place_frame_center(self, event):
         frame_width = self.winfo_reqwidth()
         frame_height = self.winfo_reqheight()
