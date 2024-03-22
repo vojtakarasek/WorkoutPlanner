@@ -1,0 +1,78 @@
+{
+  "exercises":
+  [
+
+    {
+        "name": "1",
+        "description": "ruce u na úrovni ramenou, s nádechem dolů, s výdechem nahoru",
+        "body_parts": ["paže"],
+        "level": "začátečník",
+        "repetitions": "10",
+        "series": "3",
+        "video": "../data/25.mp4"
+    },
+    {
+        "name": "2",
+        "description": "ruce u na úrovni ramenou, s nádechem dolů, s výdechem nahoru",
+        "body_parts": ["prsa"],
+        "level": "začátečník",
+        "repetitions": "10",
+        "series": "3",
+        "video": "../data/25.mp4"
+    },
+    {
+        "name": "3",
+        "description": "ruce u na úrovni ramenou, s nádechem dolů, s výdechem nahoru",
+        "body_parts": ["paže"],
+        "level": "začátečník",
+        "repetitions": "10",
+        "series": "3",
+        "video": "../data/25.mp4"
+    },
+    {
+        "name": "4",
+        "description": "ruce u na úrovni ramenou, s nádechem dolů, s výdechem nahoru",
+        "body_parts": ["prsa"],
+        "level": "začátečník",
+        "repetitions": "10",
+        "series": "3",
+        "video": "../data/25.mp4"
+    },
+    {
+        "name": "5",
+        "description": "ruce u na úrovni ramenou, s nádechem dolů, s výdechem nahoru",
+        "body_parts": ["prsa"],
+        "level": "začátečník",
+        "repetitions": "10",
+        "series": "3",
+        "video": "../data/25.mp4"
+    },
+    {
+        "name": "6",
+        "description": "ruce u na úrovni ramenou, s nádechem dolů, s výdechem nahoru",
+        "body_parts": ["paže"],
+        "level": "začátečník",
+        "repetitions": "10",
+        "series": "3",
+        "video": "../data/25.mp4"
+    },
+    {
+        "name": "7",
+        "description": "ruce u na úrovni ramenou, s nádechem dolů, s výdechem nahoru",
+        "body_parts": ["prsa"],
+        "level": "začátečník",
+        "repetitions": "10",
+        "series": "3",
+        "video": "../data/25.mp4"
+    },
+    {
+        "name": "8",
+        "description": "ruce u na úrovni ramenou, s nádechem dolů, s výdechem nahoru",
+        "body_parts": ["paže"],
+        "level": "začátečník",
+        "repetitions": "10",
+        "series": "3",
+        "video": "../data/25.mp4"
+    }
+  ]
+}

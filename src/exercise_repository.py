@@ -2,7 +2,6 @@ from exercise import Exercise
 import json
 
 from src.body_part_enum import BodyPart
-from src.level_enum import Level
 
 
 class ExerciseRepository:

@@ -20,7 +20,8 @@ class WorkoutPlanner:
         for exercise in exercises_body_part:
             if level_given in exercise.level:
                 exercises_level.append(exercise)
-                exercises_body_part.remove(exercise)
+
+        exercises_body_part = [item for item in exercises_body_part if item not in exercises_level]
 
         if len(exercises_level) < count:
             return self.add_random(exercises_level, count - len(exercises_level), exercises_body_part)

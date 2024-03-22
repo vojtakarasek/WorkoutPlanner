@@ -29,7 +29,7 @@ class ToplevelWindow(ctk.CTkToplevel):
         self.label = ctk.CTkLabel(self, text='Zvolte jednu z možností', font=('Helvetica', 50))
         self.label.place(x=400, y=320)
 
-        self.bind("<Configure>", self.initialize())
+        #self.bind("<Configure>", self.initialize())
 
     def check_if_the_clicked_exercise_is_open(self, name):
         if name == self.exercise.name:
@@ -46,7 +46,6 @@ class ToplevelWindow(ctk.CTkToplevel):
 
     def initialize(self):
         self.destroy()
-
 
     def segmented_button_callback(self, value):
         if value == 'Video':

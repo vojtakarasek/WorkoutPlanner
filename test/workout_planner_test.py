@@ -114,6 +114,13 @@ def test_get_for_level_right_body_part():
 def test_create_plan():
     planner = WorkoutPlanner(repo)
     repo.load("../test/test_data/exercises.json")
-    user_reqs = UserRequirements(["stehna", "paže"], "pokročilý")
+    user_reqs = UserRequirements(["paže", "stehna"], "pokročilý")
+    assert len(planner.create_plan(user_reqs, 8)) == 8
+
+
+def test_if_8_exercises_given_returns_8_exercises():
+    planner = WorkoutPlanner(repo)
+    repo.load("../test/test_data/json3.json")
+    user_reqs = UserRequirements(["paže", "prsa"], "začátečník")
     assert len(planner.create_plan(user_reqs, 8)) == 8
 
