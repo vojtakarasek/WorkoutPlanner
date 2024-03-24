@@ -19,10 +19,7 @@ class InputScreen(ctk.CTkFrame):
         self.controller = controller
         self.pack()
         self.pack_propagate(True)
-        switch_frame_button = ctk.CTkButton(self, text='Naplánovat', command=self.on_planning_clicked,
-                                            font=selected_font, corner_radius=10, border_width=1,border_color='black',
-                                            border_spacing=5)
-        switch_frame_button.grid(column=1, row=10, sticky='nsew')
+
 
         # variable helping with combo boxes counting
         self.i = 0
@@ -32,7 +29,7 @@ class InputScreen(ctk.CTkFrame):
         self.screen_height = self.master.winfo_screenheight()
 
         # background color
-        self.configure(fg_color='dark grey')
+        self.configure(fg_color='#070f1c')
 
         ctk.CTkLabel(self, font=selected_font, text="Vyberte obtížnost", width=666, pady=10).grid(column=1, row=0)
 
@@ -60,11 +57,14 @@ class InputScreen(ctk.CTkFrame):
         self.spacing = ctk.CTkLabel(self, text='').grid(column=1, row=8)
         self.adding_button = ctk.CTkButton(self, text="Přidat více částí těla", command=self.generate_combobox,
                                            font=selected_font, corner_radius=10, border_width=1, border_color='black',
-                                           border_spacing=5)
+                                           border_spacing=5, fg_color='#6600ff', hover_color='#350085')
         self.adding_button.grid(column=1, row=9, sticky='nsew')
 
         # Button switching to another frame
-        # self.switch_frame_button = ttk.Button(self.frm1, text='Použít')
+        switch_frame_button = ctk.CTkButton(self, text='Naplánovat', command=self.on_planning_clicked,
+                                            font=selected_font, corner_radius=10, border_width=1,border_color='black',
+                                            border_spacing=5, fg_color='#6600ff', hover_color='#350085')
+        switch_frame_button.grid(column=1, row=10, sticky='nsew')
 
         # initializing second and third bodypart combobox
         self.bp_combobox_2 = None

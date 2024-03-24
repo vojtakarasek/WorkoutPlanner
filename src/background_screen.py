@@ -1,5 +1,4 @@
-import tkinter as tk
-from input_screen import color
+from PIL import Image
 import customtkinter as ctk
 
 
@@ -10,4 +9,6 @@ class BackgroundScreen(ctk.CTkFrame):
         ctk.CTkFrame.__init__(self, parent)
         self.controller = controller
 
-        self.configure(fg_color='dark grey')
+        self.my_image = ctk.CTkImage(dark_image=Image.open("../src/background.jpg"), size=(2560, 1440))
+        self.image_label = ctk.CTkLabel(self, image=self.my_image, text='')
+        self.image_label.place(x=0, y=0)

@@ -23,7 +23,7 @@ class ToplevelWindow(ctk.CTkToplevel):
 
         self.segmented_button = ctk.CTkSegmentedButton(self, values=['Video', 'Popis'],
                                                        font=('Helvetica', 20),
-                                                       command=self.segmented_button_callback, height=30)
+                                                       command=self.segmented_button_callback, height=30, selected_color='#6600ff', unselected_color='#350085', fg_color='#350085', selected_hover_color='#6600ff', unselected_hover_color='#6600ff')
         self.segmented_button.pack(side='top', pady=20)
 
         self.label = ctk.CTkLabel(self, text='Zvolte jednu z možností', font=('Helvetica', 50))
