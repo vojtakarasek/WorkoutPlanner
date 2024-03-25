@@ -1,6 +1,6 @@
 import customtkinter as ctk
 
-selected_font = ('Helvetica', 60)
+
 text_color = 'white'
 frame_color = '#6600ff'
 border_color = '#350085'
@@ -16,11 +16,15 @@ class WorkoutScreen(ctk.CTkFrame):
 
         self.color = '#070f1c'
         self.configure(fg_color=self.color)
-        self.font = 60
+
+        #font
+        self.screen_width = self.master.winfo_screenwidth()
+        self.font = int(self.screen_width * (3/128))
+        self.selected_font = ('Helvetica', self.font)
 
         switch_frame_back_button = ctk.CTkButton(self, text='Zpátky',
                                                  command=lambda: controller.show_frame('InputScreen'),
-                                                 font=('Helvetica', 30), fg_color=frame_color, hover_color=border_color)
+                                                 font=('Helvetica', int(self.font/2)), fg_color=frame_color, hover_color=border_color)
         switch_frame_back_button.place(x=0, y=0)
 
         self.click_bindings = []
@@ -68,22 +72,22 @@ class WorkoutScreen(ctk.CTkFrame):
         self.frames()
 
         label_exercises = ctk.CTkLabel(self.exercises_frame, text='CVIKY', text_color=text_color,
-                                       font=selected_font)
+                                       font=self.selected_font)
         label_exercises.pack(side="top", expand=True, pady=30)
 
         label_repetitions = ctk.CTkLabel(self.repetitions_frame, text='OPAKOVÁNÍ', text_color=text_color,
-                                         font=selected_font)
+                                         font=self.selected_font)
         label_repetitions.pack(side='top', expand=True, pady=30, padx=30)
         # initializing labels
         for i in range(8):
             exercise = ctk.CTkLabel(self.exercises_frame, text=self.workout[i].name, text_color=text_color,
-                                    font=selected_font)
+                                    font=self.selected_font)
             exercise.pack(side='top', expand=True, anchor='w', padx=35, pady=15)
             self.drawn_exercises.append(exercise)
 
             repetition = ctk.CTkLabel(self.repetitions_frame,
                                       text=f'{self.workout[i].series}x{self.workout[i].repetitions}',
-                                      text_color=text_color, font=selected_font)
+                                      text_color=text_color, font=self.selected_font)
             repetition.pack(side='top', expand=True, anchor='center', padx=35, pady=15)
             self.drawn_repetitions.append(repetition)
 
@@ -111,8 +115,8 @@ class WorkoutScreen(ctk.CTkFrame):
         self.drawn_repetitions[value].configure(font=('Helvetica', self.font - 2, 'bold'), text_color='grey')
 
     def on_leave(self, event, value):
-        self.drawn_exercises[value].configure(font=selected_font, text_color=text_color)
-        self.drawn_repetitions[value].configure(font=selected_font, text_color=text_color)
+        self.drawn_exercises[value].configure(font=self.selected_font, text_color=text_color)
+        self.drawn_repetitions[value].configure(font=self.selected_font, text_color=text_color)
 
     def on_click(self, event, value):
         self.controller.show_toplevel(self.workout[value])

@@ -59,6 +59,6 @@ class GUI(tk.Tk):
             self.toplevel_window = ToplevelWindow(self)  # create window if its None or destroyed
         else:
             self.toplevel_window.focus()
+            self.toplevel_window.check_if_the_clicked_exercise_is_open(exercise.name)
 
         self.toplevel_window.pass_values(exercise)
-
