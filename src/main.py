@@ -1,4 +1,4 @@
-from gui import GUI
+from src.gui import GUI
 from src.exercise_repository import ExerciseRepository
 from src.workout_planner import WorkoutPlanner
 
