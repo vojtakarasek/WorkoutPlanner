@@ -2,8 +2,8 @@ import tkinter as tk
 import customtkinter as ctk
 
 from src.level_enum import Level
-from user_requirements import UserRequirements
-from body_part_enum import BodyPart
+from src.user_requirements import UserRequirements
+from src.body_part_enum import BodyPart
 
 values = ['', 'břicho', 'záda', 'paže', 'prsa', 'ramena', 'stehna', 'lýtka']
 
