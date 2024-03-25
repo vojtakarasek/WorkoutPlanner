@@ -1,6 +1,6 @@
-from exercise import Exercise
 import json
 
+from src.exercise import Exercise
 from src.body_part_enum import BodyPart
 
 
