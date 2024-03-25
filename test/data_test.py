@@ -4,7 +4,7 @@ import os
 
 def test_videos():
     repository = ExerciseRepository()
-    repository.load("../data/exercises1.json")
+    repository.load("test_data/exercises1_test.json")
     repository.get_all()
     exercises = repository.exercises
     videos = []
@@ -18,7 +18,8 @@ def test_videos():
     with os.scandir(basepath) as entries:
         for entry in entries:
             if entry.is_file():
-                if entry.path in videos:
+                entry_path = entry.path.replace('../', '')
+                if entry_path in videos:
                     pass
                 else:
                     a += 1

@@ -8,7 +8,7 @@
       "repetitions": "12",
       "series": "4",
       "equipment": ["jednoručky"],
-      "video": "../data/cviky/Predpazovani s jednoruckami.mp4"
+      "video": "data/cviky/Predpazovani s jednoruckami.mp4"
     },
     {
       "name": "Předpažování s jednoručkami",
@@ -18,7 +18,7 @@
       "repetitions": "12",
       "series": "4",
       "equipment": ["jednoručky"],
-      "video": "../data/cviky/Predpazovani s jednoruckami.mp4"
+      "video": "data/cviky/Predpazovani s jednoruckami.mp4"
     },
     {
       "name": "Arnoldovy tlaky",
@@ -28,7 +28,7 @@
       "repetitions": "12",
       "series": "4",
       "equipment": ["jednoručky"],
-      "video": "../data/cviky/Arnoldovy tlaky.mp4"
+      "video": "data/cviky/Arnoldovy tlaky.mp4"
     },
     {
       "name": "Tlaky s jednoručkami vsedě",
@@ -38,7 +38,7 @@
       "repetitions": "12",
       "series": "4",
       "equipment": ["jednoručky", "posilovací lavice"],
-      "video": "../data/cviky/tlaky s jednoruckami v sede.mp4"
+      "video": "data/cviky/tlaky s jednoruckami v sede.mp4"
     },
     {
       "name": "Tlaky s osou vsedě",
@@ -48,7 +48,7 @@
       "repetitions": "12",
       "series": "4",
       "equipment": ["osa"],
-      "video": "../data/cviky/tlaky s osou v sede.mp4"
+      "video": "data/cviky/tlaky s osou v sede.mp4"
     },
     {
       "name": "Tlaky s osou vestoje",
@@ -58,7 +58,7 @@
       "repetitions": "10",
       "series": "4",
       "equipment": ["osa"],
-      "video": "../data/cviky/tlaky s osou ve stoje.mp4"
+      "video": "data/cviky/tlaky s osou ve stoje.mp4"
     },
     {
       "name": "Předpažení s kotoučem a rotací",
@@ -68,7 +68,7 @@
       "repetitions": "15 na každou stranu",
       "series": "4",
       "equipment": ["kotouč"],
-      "video": "../data/cviky/Bus driver.mp4"
+      "video": "data/cviky/Bus driver.mp4"
     },
     {
       "name": "Plank s upažením",
@@ -78,7 +78,7 @@
       "repetitions": "15 na každou stranu",
       "series": "3",
       "equipment": [""],
-      "video": "../data/cviky/plank s upazenim.mp4"
+      "video": "data/cviky/plank s upazenim.mp4"
     },
     {
       "name": "Shyby na hrazdě s nadhmatem",
@@ -88,7 +88,7 @@
       "repetitions": "8",
       "series": "3",
       "equipment": ["hrazda"],
-      "video": "../data/cviky/shyby na hrazde.mp4"
+      "video": "data/cviky/shyby na hrazde.mp4"
     },
     {
       "name": "Mrtvý tah",
@@ -98,7 +98,7 @@
       "repetitions": "15",
       "series": "3",
       "equipment": ["osa"],
-      "video": "../data/cviky/dead lift.mp4"
+      "video": "data/cviky/dead lift.mp4"
     },
     {
       "name": "Přitahování osy v předklonu nadhmatem",
@@ -108,7 +108,7 @@
       "repetitions": "12",
       "series": "3",
       "equipment": ["osa"],
-      "video": "../data/cviky/Pritahovani osy v predklonu nadhmatem.mp4"
+      "video": "data/cviky/Pritahovani osy v predklonu nadhmatem.mp4"
     },
     {
       "name": "Stahování horní kladky nadhmatem",
@@ -118,7 +118,7 @@
       "repetitions": "12",
       "series": "3",
       "equipment": ["horní kladka"],
-      "video": "../data/cviky/stahovani horni kladky nadhmatem.mp4"
+      "video": "data/cviky/stahovani horni kladky nadhmatem.mp4"
     },
     {
       "name": "Stahování horní kladky podhmatem",
@@ -128,7 +128,7 @@
       "repetitions": "12",
       "series": "3",
       "equipment": ["horní kladka"],
-      "video": "../data/cviky/stahovani horni kladky podhmatem.mp4"
+      "video": "data/cviky/stahovani horni kladky podhmatem.mp4"
     },
     {
       "name": "Přítahy jednoruček na lavici",
@@ -138,7 +138,7 @@
       "repetitions": "12",
       "series": "3",
       "equipment": ["nastavitelná lavice", "jednoručky"],
-      "video": "../data/cviky/Pritahy jednorucek na lavici.mp4"
+      "video": "data/cviky/Pritahy jednorucek na lavici.mp4"
     },
     {
       "name": "Přítahy jednoručky v kleče na lavici",
@@ -148,7 +148,7 @@
       "repetitions": "12 na každou ruku",
       "series": "3",
       "equipment": ["nastavitelná lavice", "jednoručky"],
-      "video": "../data/cviky/Pritahy jednorucky v klece na lavici.mp4"
+      "video": "data/cviky/Pritahy jednorucky v klece na lavici.mp4"
     },
     {
       "name": "Vzpřimování na šikmé lavici",
@@ -158,7 +158,7 @@
       "repetitions": "15",
       "series": "4",
       "equipment": ["hyperextenční trenažer zad"],
-      "video": "../data/cviky/hyperextenze.mp4"
+      "video": "data/cviky/hyperextenze.mp4"
     },
     {
       "name": "Kliky(push-ups)",
@@ -168,7 +168,7 @@
       "repetitions": "12",
       "series": "4",
       "equipment": [""],
-      "video": "../data/cviky/kliky.mp4"
+      "video": "data/cviky/kliky.mp4"
     },
     {
       "name": "Bench press",
@@ -178,7 +178,7 @@
       "repetitions": "10",
       "series": "3",
       "equipment": ["stroj na bench"],
-      "video": "../data/cviky/bench.mp4"
+      "video": "data/cviky/bench.mp4"
     },
     {
       "name": "Rozpažování s jednoručkami",
@@ -188,7 +188,7 @@
       "repetitions": "12",
       "series": "3",
       "equipment": ["jednoručky", "nastavitelná lavice"],
-      "video": "../data/cviky/Rozpazovani s jednoruckami.mp4"
+      "video": "data/cviky/Rozpazovani s jednoruckami.mp4"
     },
     {
       "name": "Tlaky s jednoručkami na šikmé lavici",
@@ -198,7 +198,7 @@
       "repetitions": "12",
       "series": "3",
       "equipment": ["jednoručky", "nastavitelná lavice"],
-      "video": "../data/cviky/tlaky s jednoruckami na sikme lavici.mp4"
+      "video": "data/cviky/tlaky s jednoruckami na sikme lavici.mp4"
     },
     {
       "name": "Pullover s jednoručkou",
@@ -208,7 +208,7 @@
       "repetitions": "12",
       "series": "3",
       "equipment": ["jednoručky", "nastavitelná lavice"],
-      "video": "../data/cviky/pullover.mp4"
+      "video": "data/cviky/pullover.mp4"
     },
     {
       "name": "Diamantové kliky",
@@ -218,7 +218,7 @@
       "repetitions": "8",
       "series": "2",
       "equipment": [""],
-      "video": "../data/cviky/diamantovy kliky.mp4"
+      "video": "data/cviky/diamantovy kliky.mp4"
     },
     {
       "name": "Incline bench press",
@@ -228,7 +228,7 @@
       "repetitions": "10",
       "series": "3",
       "equipment": ["stroj na bench"],
-      "video": "../data/cviky/incline bench.mp4"
+      "video": "data/cviky/incline bench.mp4"
     },
     {
       "name": "Hand release klik",
@@ -238,7 +238,7 @@
       "repetitions": "12",
       "series": "3",
       "equipment": [""],
-      "video": "../data/cviky/hand release klik.mp4"
+      "video": "data/cviky/hand release klik.mp4"
     },
     {
       "name": "Skull crushers",
@@ -248,7 +248,7 @@
       "repetitions": "8",
       "series": "4",
       "equipment": ["osa", "nastavitelná lavice"],
-      "video": "../data/cviky/skull crushers.mp4"
+      "video": "data/cviky/skull crushers.mp4"
     },
     {
       "name": "Bicepsový zdvih",
@@ -258,7 +258,7 @@
       "repetitions": "12 na každou ruku",
       "series": "3",
       "equipment": ["Jednoručky"],
-      "video": "../data/cviky/bicepsovy zdvih.mp4"
+      "video": "data/cviky/bicepsovy zdvih.mp4"
     },
     {
       "name": "Koncentrovaný bicepsový zdvih",
@@ -268,7 +268,7 @@
       "repetitions": "12",
       "series": "3",
       "equipment": ["jednoručky", "nastavitelná lavice"],
-      "video": "../data/cviky/koncentrovany bicepsovy zdvih.mp4"
+      "video": "data/cviky/koncentrovany bicepsovy zdvih.mp4"
     },
     {
       "name": "Sed-lehy",
@@ -278,7 +278,7 @@
       "repetitions": "15",
       "series": "4",
       "equipment": [""],
-      "video": "../data/cviky/sed lehy.mp4"
+      "video": "data/cviky/sed lehy.mp4"
     },
     {
       "name": "V-Zdvih (sklapovačky)",
@@ -288,7 +288,7 @@
       "repetitions": "3",
       "series": "15",
       "equipment": [""],
-      "video": "../data/cviky/sklapovacky.mp4"
+      "video": "data/cviky/sklapovacky.mp4"
     },
     {
       "name": "Hollow hold",
@@ -298,7 +298,7 @@
       "repetitions": "20-30s",
       "series": "4",
       "equipment": [""],
-      "video": "../data/cviky/hollow hold.mp4"
+      "video": "data/cviky/hollow hold.mp4"
     },
     {
       "name": "Sprinter",
@@ -308,7 +308,7 @@
       "repetitions": "20 na každou stranu",
       "series": "3",
       "equipment": [""],
-      "video": "../data/cviky/sprinter.mp4"
+      "video": "data/cviky/sprinter.mp4"
     },
     {
       "name": "Reverse Crunch",
@@ -318,7 +318,7 @@
       "repetitions": "15",
       "series": "3",
       "equipment": [""],
-      "video": "../data/cviky/reverse crunch.mp4"
+      "video": "data/cviky/reverse crunch.mp4"
     },
     {
       "name": "Horolezec (Mountain Climber)",
@@ -328,7 +328,7 @@
       "repetitions": "60s",
       "series": "3",
       "equipment": [""],
-      "video": "../data/cviky/horolezec.mp4"
+      "video": "data/cviky/horolezec.mp4"
     },
     {
       "name": "Russian Twist",
@@ -338,7 +338,7 @@
       "repetitions": "20 rotací na každou stranu",
       "series": "3",
       "equipment": [""],
-      "video": "../data/cviky/russian twist.mp4"
+      "video": "data/cviky/russian twist.mp4"
     },
     {
       "name": "Plank",
@@ -348,7 +348,7 @@
       "repetitions": "90s",
       "series": "2",
       "equipment": [""],
-      "video": "../data/cviky/plank.mp4"
+      "video": "data/cviky/plank.mp4"
     },
     {
       "name": "Side Plank",
@@ -358,7 +358,7 @@
       "repetitions": "60s na každou stranu",
       "series": "2",
       "equipment": [""],
-      "video": "../data/cviky/side plank.mp4"
+      "video": "data/cviky/side plank.mp4"
     },
     {
       "name": "Superman",
@@ -368,7 +368,7 @@
       "repetitions": "12",
       "series": "3",
       "equipment": [""],
-      "video": "../data/cviky/Superman.mp4"
+      "video": "data/cviky/Superman.mp4"
     },
     {
       "name": "Kmitání nohama",
@@ -378,7 +378,7 @@
       "repetitions": "30s",
       "series": "3",
       "equipment": [""],
-      "video": "../data/cviky/kmitani nohama.mp4"
+      "video": "data/cviky/kmitani nohama.mp4"
     },
     {
       "name": "Bicycle Crunch",
@@ -388,7 +388,7 @@
       "repetitions": "15 na každou nohu",
       "series": "3",
       "equipment": [""],
-      "video": "../data/cviky/Bicycle crunch.mp4"
+      "video": "data/cviky/Bicycle crunch.mp4"
     },
     {
       "name": "Oblique Crunches",
@@ -398,7 +398,7 @@
       "repetitions": "15 na každou stranu",
       "series": "3",
       "equipment": [""],
-      "video": "../data/cviky/oblique crunches.mp4"
+      "video": "data/cviky/oblique crunches.mp4"
     },
     {
       "name": "Dřepy s osou",
@@ -408,7 +408,7 @@
       "repetitions": "6",
       "series": "5",
       "equipment": ["osa"],
-      "video": "../data/cviky/drepy s osou.mp4"
+      "video": "data/cviky/drepy s osou.mp4"
     },
     {
       "name": "Výpad vzad jednoručky/kettlebell",
@@ -418,7 +418,7 @@
       "repetitions": "15 na každou nohu",
       "series": "3",
       "equipment": ["jednoručky", "kettlebell"],
-      "video": "../data/cviky/vypad vzad.mp4"
+      "video": "data/cviky/vypad vzad.mp4"
     },
     {
       "name": "Výpad vpřed jednoručky/kettlebell",
@@ -428,7 +428,7 @@
       "repetitions": "15 na každou nohu",
       "series": "3",
       "equipment": ["jednoručky", "kettlebell"],
-      "video": "../data/cviky/vypad vpred.mp4"
+      "video": "data/cviky/vypad vpred.mp4"
     },
     {
       "name": "Bulharský dřep",
@@ -438,7 +438,7 @@
       "repetitions": "12 na každou nohu",
       "series": "3",
       "equipment": ["jednoručky", "kettlebell"],
-      "video": "../data/cviky/bulharsky drep.mp4"
+      "video": "data/cviky/bulharsky drep.mp4"
     },
     {
       "name": "Hip Thrust",
@@ -448,7 +448,7 @@
       "repetitions": "8",
       "series": "5",
       "equipment": ["osa", "nastavitelná lavice"],
-      "video": "../data/cviky/Hip thrust.mp4"
+      "video": "data/cviky/Hip thrust.mp4"
     },
     {
       "name": "Zakopávání",
@@ -458,7 +458,7 @@
       "repetitions": "10",
       "series": "3",
       "equipment": ["stroj na zakopávání"],
-      "video": "../data/cviky/zakopavani.mp4"
+      "video": "data/cviky/zakopavani.mp4"
     },
     {
       "name": "Good Morning",
@@ -468,7 +468,7 @@
       "repetitions": "6",
       "series": "3",
       "equipment": ["osa"],
-      "video": "../data/cviky/good morning.mp4"
+      "video": "data/cviky/good morning.mp4"
     },
     {
       "name": "Předkopávání",
@@ -478,7 +478,7 @@
       "repetitions": "10",
       "series": "3",
       "equipment": ["stroj na předkopávání"],
-      "video": "../data/cviky/predkopavani.mp4"
+      "video": "data/cviky/predkopavani.mp4"
     },
     {
       "name": "Výstupy na bednu se zátěží",
@@ -488,7 +488,7 @@
       "repetitions": "10 a každou nohu",
       "series": "4",
       "equipment": ["jednoručky", "kettlebell", "bedna"],
-      "video": "../data/cviky/vystup na bednu.mp4"
+      "video": "data/cviky/vystup na bednu.mp4"
     },
     {
       "name": "Skoky na bednu",
@@ -498,7 +498,7 @@
       "repetitions": "15",
       "series": "3",
       "equipment": ["bedna"],
-      "video": "../data/cviky/skoky na bednu.mp4"
+      "video": "data/cviky/skoky na bednu.mp4"
     },
     {
       "name": "Skákání přes švihadlo",
@@ -508,7 +508,7 @@
       "repetitions": "2 min",
       "series": "2",
       "equipment": ["švihadlo"],
-      "video": "../data/cviky/skakani pres svihadlo.mp4"
+      "video": "data/cviky/skakani pres svihadlo.mp4"
     },
     {
       "name": "Výpony",
@@ -518,7 +518,7 @@
       "repetitions": "30",
       "series": "4",
       "equipment": [""],
-      "video": "../data/cviky/vypony.mp4"
+      "video": "data/cviky/vypony.mp4"
     },
     {
       "name": "Výpony na kotouči",
@@ -528,7 +528,7 @@
       "repetitions": "30",
       "series": "4",
       "equipment": ["kotouč"],
-      "video": "../data/cviky/vypony na kotouci.mp4"
+      "video": "data/cviky/vypony na kotouci.mp4"
     },
     {
       "name": "Dřepy s výskokem",
@@ -538,7 +538,7 @@
       "repetitions": "20",
       "series": "4",
       "equipment": [""],
-      "video": "../data/cviky/drepy s vyskokem.mp4"
+      "video": "data/cviky/drepy s vyskokem.mp4"
     },
     {
       "name": "Skoky na Bosu",
@@ -548,7 +548,7 @@
       "repetitions": "15",
       "series": "3",
       "equipment": ["Bosu"],
-      "video": "../data/cviky/skoky na bosu.mp4"
+      "video": "data/cviky/skoky na bosu.mp4"
     }
   ]
 }

@@ -9,6 +9,6 @@ class BackgroundScreen(ctk.CTkFrame):
         ctk.CTkFrame.__init__(self, parent)
         self.controller = controller
 
-        self.my_image = ctk.CTkImage(dark_image=Image.open("../src/background.jpg"), size=(2560, 1440))
+        self.my_image = ctk.CTkImage(dark_image=Image.open("imgs/background.jpg"), size=(2560, 1440))
         self.image_label = ctk.CTkLabel(self, image=self.my_image, text='')
         self.image_label.place(x=0, y=0)
