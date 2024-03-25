@@ -1,6 +1,6 @@
 from dataclasses import dataclass
-from level_enum import Level
-from body_part_enum import BodyPart
+from src.level_enum import Level
+from src.body_part_enum import BodyPart
 
 
 @dataclass

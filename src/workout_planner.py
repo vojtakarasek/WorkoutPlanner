@@ -1,9 +1,9 @@
 import random
 
-from exercise_repository import ExerciseRepository
+from src.exercise_repository import ExerciseRepository
 from src.exercise import Exercise
 from src.level_enum import Level
-from user_requirements import UserRequirements
+from src.user_requirements import UserRequirements
 
 
 class WorkoutPlanner:

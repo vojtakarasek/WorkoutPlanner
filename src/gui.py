@@ -2,10 +2,10 @@ import tkinter as tk
 
 from src.user_requirements import UserRequirements
 from src.workout_planner import WorkoutPlanner
-from input_screen import InputScreen
-from workout_screen import WorkoutScreen
-from background_screen import BackgroundScreen
-from toplevel_window import ToplevelWindow
+from src.input_screen import InputScreen
+from src.workout_screen import WorkoutScreen
+from src.background_screen import BackgroundScreen
+from src.toplevel_window import ToplevelWindow
 
 
 class GUI(tk.Tk):
