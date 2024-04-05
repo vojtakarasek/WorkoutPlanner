@@ -6,6 +6,8 @@ class ToplevelWindow(ctk.CTkToplevel):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
+        ctk.set_appearance_mode("dark")
+
         self.video_frame = None
         self.videoplayer = None
         self.values = ()

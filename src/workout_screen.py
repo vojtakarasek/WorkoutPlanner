@@ -8,6 +8,8 @@ border_color = '#350085'
 
 class WorkoutScreen(ctk.CTkFrame):
     def __init__(self, master, parent, controller):
+        ctk.set_appearance_mode("dark")
+
         self.workout = None
         self.master = master
 

@@ -13,13 +13,14 @@ selected_font = ('Helvetica', 30)
 
 class InputScreen(ctk.CTkFrame):
     def __init__(self, master, parent, controller):
+        ctk.set_appearance_mode("dark")
+
         self.master = master
 
         ctk.CTkFrame.__init__(self, parent)
         self.controller = controller
         self.pack()
         self.pack_propagate(True)
-
 
         # variable helping with combo boxes counting
         self.i = 0
