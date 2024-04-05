@@ -23,7 +23,7 @@ class GUI(customtkinter.CTk):
         # fulfilling the screen
         screen_width = self.winfo_screenwidth()
         screen_height = self.winfo_screenheight()
-        self.geometry(f'{screen_width}x{screen_height}+-8+-1')
+        self.geometry(f'{screen_width}x{screen_height}+0+0')
 
         self.frames = {}
         for F in (InputScreen, WorkoutScreen, BackgroundScreen):
