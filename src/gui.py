@@ -1,4 +1,4 @@
-import tkinter as tk
+import customtkinter
 
 from src.user_requirements import UserRequirements
 from src.workout_planner import WorkoutPlanner
@@ -8,14 +8,14 @@ from src.background_screen import BackgroundScreen
 from src.toplevel_window import ToplevelWindow
 
 
-class GUI(tk.Tk):
+class GUI(customtkinter.CTk):
     def __init__(self, *args, **kwargs):
-        tk.Tk.__init__(self, *args, **kwargs)
+        super().__init__(*args, **kwargs)
 
         self.exercises_count = 8
 
-        window = self
-        container = tk.Frame(self)
+        #window = self
+        container = customtkinter.CTkFrame(self)
         container.pack(side='top', fill='both', expand=True)
         container.grid_rowconfigure(0, weight=1)
         container.grid_columnconfigure(0, weight=1)
@@ -23,7 +23,7 @@ class GUI(tk.Tk):
         # fulfilling the screen
         screen_width = self.winfo_screenwidth()
         screen_height = self.winfo_screenheight()
-        window.geometry(f'{screen_width}x{screen_height}')
+        self.geometry(f'{screen_width}x{screen_height}+-8+-1')
 
         self.frames = {}
         for F in (InputScreen, WorkoutScreen, BackgroundScreen):
